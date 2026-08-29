@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pandas
+torch
+pytorch-forecasting
+lightning
+scikit-learn
+reportlab
+python-dotenv

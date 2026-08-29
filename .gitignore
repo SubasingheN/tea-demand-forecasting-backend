@@ -1,0 +1,36 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Environment variables
+.env
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Testing / cache
+.pytest_cache/
+.coverage
+
+# Temporary files
+*.tmp
+*.log
+
+# Training experiment logs
+lightning_logs/
+
+# Generated PDF reports
+reports/*.pdf
+
+# Legacy/local forecast history
+data/forecast_history.json
