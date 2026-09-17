@@ -1,0 +1,75 @@
+{
+  "issued_at_utc": "2026-09-17T22:29:37.909548+00:00",
+  "forecast_origin_week_start": "2026-08-31",
+  "last_source_sale_date": "2026-09-02",
+  "target_kind": "observed_auction_sales_by_elevation",
+  "unit": "thousand kilograms",
+  "caution": "Origin data may be old. These predictions were saved before target weeks began; accuracy is unknown until independently published outcomes are available.",
+  "sha256": {
+    "auction_calendar_weeks.csv": "9333d7d6de8a5b999544fcba8aa8ec60f93a9a7958b1b7265a69f9e2f9affe1c",
+    "auction-tft.ckpt": "5ba724282e67285b8f90bb285231ff261b61d63290b5cb95efe43f9c6f47ca34",
+    "Weekly Tea Auction Quantities & Averages 2026_1788848249.pdf": "54a68c53173e2571bb4134057550405530d6efef929800b66c7ca398b4ca3504"
+  },
+  "forecasts": [
+    {
+      "target": "high_1000kg",
+      "target_week_start": "2026-09-21",
+      "horizon_week": 3,
+      "tft_p10_1000kg": 748.52,
+      "tft_p50_1000kg": 866.21,
+      "tft_p90_1000kg": 986.04,
+      "last_baseline_1000kg": 723.0,
+      "mean4_baseline_1000kg": 762.75
+    },
+    {
+      "target": "low_1000kg",
+      "target_week_start": "2026-09-21",
+      "horizon_week": 3,
+      "tft_p10_1000kg": 2418.49,
+      "tft_p50_1000kg": 2998.88,
+      "tft_p90_1000kg": 3268.22,
+      "last_baseline_1000kg": 2881.0,
+      "mean4_baseline_1000kg": 2883.0
+    },
+    {
+      "target": "medium_1000kg",
+      "target_week_start": "2026-09-21",
+      "horizon_week": 3,
+      "tft_p10_1000kg": 746.82,
+      "tft_p50_1000kg": 862.96,
+      "tft_p90_1000kg": 981.05,
+      "last_baseline_1000kg": 756.0,
+      "mean4_baseline_1000kg": 755.25
+    },
+    {
+      "target": "high_1000kg",
+      "target_week_start": "2026-09-28",
+      "horizon_week": 4,
+      "tft_p10_1000kg": 767.83,
+      "tft_p50_1000kg": 873.82,
+      "tft_p90_1000kg": 971.88,
+      "last_baseline_1000kg": 723.0,
+      "mean4_baseline_1000kg": 762.75
+    },
+    {
+      "target": "low_1000kg",
+      "target_week_start": "2026-09-28",
+      "horizon_week": 4,
+      "tft_p10_1000kg": 2400.48,
+      "tft_p50_1000kg": 3004.59,
+      "tft_p90_1000kg": 3234.77,
+      "last_baseline_1000kg": 2881.0,
+      "mean4_baseline_1000kg": 2883.0
+    },
+    {
+      "target": "medium_1000kg",
+      "target_week_start": "2026-09-28",
+      "horizon_week": 4,
+      "tft_p10_1000kg": 766.21,
+      "tft_p50_1000kg": 870.46,
+      "tft_p90_1000kg": 966.99,
+      "last_baseline_1000kg": 756.0,
+      "mean4_baseline_1000kg": 755.25
+    }
+  ]
+}
