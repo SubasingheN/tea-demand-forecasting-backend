@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "encoder_weeks": 8,
+  "horizon_weeks": 4,
+  "train_windows": 96,
+  "validation_windows": 39,
+  "test_windows": 27,
+  "torch_version": "2.13.0+cpu",
+  "checkpoint": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\checkpoints\\auction-tft.ckpt",
+  "test_predictions": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\tft_predictions.csv"
+}

@@ -1,0 +1,134 @@
+{
+  "target": "observed weekly auction sales by elevation, in thousand kg",
+  "horizon": "four consecutive calendar weeks with observed auction sales",
+  "evaluation_cutoffs": {
+    "validation": "2025-07-01",
+    "test": "2026-01-01"
+  },
+  "counts_are_forecast_origins_per_elevation": true,
+  "overlapping_windows_are_not_independent": true,
+  "encoder_lengths": {
+    "4": {
+      "train": {
+        "origins": 48,
+        "first_origin": "2024-01-22",
+        "last_origin": "2025-06-02"
+      },
+      "validation": {
+        "origins": 13,
+        "first_origin": "2025-06-30",
+        "last_origin": "2025-09-22"
+      },
+      "test": {
+        "origins": 17,
+        "first_origin": "2025-12-29",
+        "last_origin": "2026-08-03"
+      }
+    },
+    "8": {
+      "train": {
+        "origins": 32,
+        "first_origin": "2024-02-19",
+        "last_origin": "2025-03-10"
+      },
+      "validation": {
+        "origins": 13,
+        "first_origin": "2025-06-30",
+        "last_origin": "2025-09-22"
+      },
+      "test": {
+        "origins": 9,
+        "first_origin": "2026-01-26",
+        "last_origin": "2026-08-03"
+      }
+    },
+    "12": {
+      "train": {
+        "origins": 22,
+        "first_origin": "2024-07-01",
+        "last_origin": "2024-11-25"
+      },
+      "validation": {
+        "origins": 12,
+        "first_origin": "2025-07-07",
+        "last_origin": "2025-09-22"
+      },
+      "test": {
+        "origins": 3,
+        "first_origin": "2026-02-23",
+        "last_origin": "2026-03-09"
+      }
+    },
+    "16": {
+      "train": {
+        "origins": 18,
+        "first_origin": "2024-07-29",
+        "last_origin": "2024-11-25"
+      },
+      "validation": {
+        "origins": 8,
+        "first_origin": "2025-08-04",
+        "last_origin": "2025-09-22"
+      },
+      "test": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      }
+    },
+    "24": {
+      "train": {
+        "origins": 10,
+        "first_origin": "2024-09-23",
+        "last_origin": "2024-11-25"
+      },
+      "validation": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      },
+      "test": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      }
+    },
+    "32": {
+      "train": {
+        "origins": 2,
+        "first_origin": "2024-11-18",
+        "last_origin": "2024-11-25"
+      },
+      "validation": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      },
+      "test": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      }
+    },
+    "52": {
+      "train": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      },
+      "validation": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      },
+      "test": {
+        "origins": 0,
+        "first_origin": null,
+        "last_origin": null
+      }
+    }
+  },
+  "conclusion": "The existing 52-week TFT encoder has no eligible windows. An 8-week encoder permits a limited experiment; performance must be measured before making any model claim.",
+  "window_file": "tft_8week_windows.csv",
+  "matched_baseline_file": "baseline_matched_8week.csv"
+}

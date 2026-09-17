@@ -1,0 +1,91 @@
+{
+  "interval": "model 10th\u201390th percentiles (nominal 80%)",
+  "unit": "thousand kg of observed auction sales",
+  "note": "Nine overlapping test origins per elevation. Empirical coverage is descriptive, not a calibrated confidence guarantee.",
+  "results": [
+    {
+      "target": "high_1000kg",
+      "horizon_week": 1,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 287.52
+    },
+    {
+      "target": "high_1000kg",
+      "horizon_week": 2,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 268.32
+    },
+    {
+      "target": "high_1000kg",
+      "horizon_week": 3,
+      "n": 9,
+      "coverage": 0.6667,
+      "mean_width_1000kg": 241.47
+    },
+    {
+      "target": "high_1000kg",
+      "horizon_week": 4,
+      "n": 9,
+      "coverage": 0.6667,
+      "mean_width_1000kg": 206.69
+    },
+    {
+      "target": "low_1000kg",
+      "horizon_week": 1,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 865.86
+    },
+    {
+      "target": "low_1000kg",
+      "horizon_week": 2,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 857.78
+    },
+    {
+      "target": "low_1000kg",
+      "horizon_week": 3,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 846.58
+    },
+    {
+      "target": "low_1000kg",
+      "horizon_week": 4,
+      "n": 9,
+      "coverage": 1.0,
+      "mean_width_1000kg": 830.58
+    },
+    {
+      "target": "medium_1000kg",
+      "horizon_week": 1,
+      "n": 9,
+      "coverage": 0.6667,
+      "mean_width_1000kg": 278.61
+    },
+    {
+      "target": "medium_1000kg",
+      "horizon_week": 2,
+      "n": 9,
+      "coverage": 0.4444,
+      "mean_width_1000kg": 260.55
+    },
+    {
+      "target": "medium_1000kg",
+      "horizon_week": 3,
+      "n": 9,
+      "coverage": 0.3333,
+      "mean_width_1000kg": 234.56
+    },
+    {
+      "target": "medium_1000kg",
+      "horizon_week": 4,
+      "n": 9,
+      "coverage": 0.1111,
+      "mean_width_1000kg": 201.03
+    }
+  ]
+}

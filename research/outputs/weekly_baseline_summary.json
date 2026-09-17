@@ -1,0 +1,176 @@
+{
+  "cutoff": "2026-01-01",
+  "excluded_origins": {
+    "missing_future": 7,
+    "missing_history": 8
+  },
+  "metrics": {
+    "high_1000kg": {
+      "last": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 61.71
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 90.29
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 98.82
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 85.29
+        }
+      },
+      "mean4": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 60.16
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 74.72
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 92.6
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 99.43
+        }
+      }
+    },
+    "medium_1000kg": {
+      "last": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 70.71
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 89.82
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 102.24
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 100.82
+        }
+      },
+      "mean4": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 55.18
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 70.74
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 91.62
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 106.06
+        }
+      }
+    },
+    "low_1000kg": {
+      "last": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 266.47
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 291.82
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 343.24
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 290.18
+        }
+      },
+      "mean4": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 199.96
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 240.01
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 258.81
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 215.49
+        }
+      }
+    },
+    "total_1000kg": {
+      "last": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 354.88
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 407.0
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 503.0
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 383.59
+        }
+      },
+      "mean4": {
+        "1": {
+          "n_origins": 17,
+          "mae_1000kg": 254.62
+        },
+        "2": {
+          "n_origins": 17,
+          "mae_1000kg": 311.15
+        },
+        "3": {
+          "n_origins": 17,
+          "mae_1000kg": 376.74
+        },
+        "4": {
+          "n_origins": 17,
+          "mae_1000kg": 351.0
+        }
+      }
+    }
+  },
+  "eligible_origins": 17,
+  "unit": "thousand kilograms",
+  "target_kind": "auction_sales_by_elevation",
+  "weeks": 140,
+  "observed_weeks": 133,
+  "missing_weeks": [
+    "2024-04-08",
+    "2024-12-30",
+    "2025-04-14",
+    "2025-10-27",
+    "2025-12-01",
+    "2026-04-13",
+    "2026-06-01"
+  ],
+  "note": "Missing weeks have blank targets; they are not zero sales or imputed demand. TFT is not evaluated here."
+}

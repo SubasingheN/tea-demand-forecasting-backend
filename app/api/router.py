@@ -9,10 +9,10 @@ from app.api.explainability import router as explainability_router
 from app.api.alerts import router as alerts_router
 from app.api.recommendations import router as recommendations_router
 from app.api.demo import router as demo_router
+from app.api.auction_research import router as auction_research_router
 
 
 api_router = APIRouter()
-
 
 api_router.include_router(health_router)
 api_router.include_router(data_router)
@@ -23,3 +23,4 @@ api_router.include_router(explainability_router)
 api_router.include_router(alerts_router)
 api_router.include_router(recommendations_router)
 api_router.include_router(demo_router)
+api_router.include_router(auction_research_router)

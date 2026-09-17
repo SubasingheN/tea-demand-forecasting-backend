@@ -1,0 +1,52 @@
+{
+  "scope": "Aggregate TFT variable reliance across nine observed test origins per elevation",
+  "caution": "Model-internal weights are not causal effects, forecast accuracy, or per-origin reasons. Only historical sales, relative time, and elevation were available as inputs.",
+  "checkpoint": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\checkpoints\\auction-tft.ckpt",
+  "results": {
+    "high_1000kg": {
+      "test_origins": 9,
+      "encoder_variables": {
+        "time_idx": 0.556361,
+        "relative_time_idx": 1.845189,
+        "sale_1000kg": 6.59845
+      },
+      "decoder_variables": {
+        "time_idx": 1.019646,
+        "relative_time_idx": 7.980354
+      },
+      "static_variables": {
+        "elevation": 9.0
+      }
+    },
+    "medium_1000kg": {
+      "test_origins": 9,
+      "encoder_variables": {
+        "time_idx": 0.568407,
+        "relative_time_idx": 1.713162,
+        "sale_1000kg": 6.718431
+      },
+      "decoder_variables": {
+        "time_idx": 1.019646,
+        "relative_time_idx": 7.980354
+      },
+      "static_variables": {
+        "elevation": 9.0
+      }
+    },
+    "low_1000kg": {
+      "test_origins": 9,
+      "encoder_variables": {
+        "time_idx": 0.584181,
+        "relative_time_idx": 1.655754,
+        "sale_1000kg": 6.760065
+      },
+      "decoder_variables": {
+        "time_idx": 1.019647,
+        "relative_time_idx": 7.980353
+      },
+      "static_variables": {
+        "elevation": 9.0
+      }
+    }
+  }
+}
