@@ -1,0 +1,327 @@
+{
+  "source_week_start": "2026-08-31",
+  "method": "Increase one historical input by 5%, hold the other seven fixed, rerun the same checkpoint",
+  "scope": "Local sensitivity of this dated model forecast only",
+  "caution": "These are model responses to hypothetical inputs. They do not identify causes of market sales or show what an industry user understood.",
+  "unit": "thousand kg",
+  "results": {
+    "high_1000kg": {
+      "original_median_1000kg_by_horizon": [
+        844.84,
+        858.06,
+        866.21,
+        873.82
+      ],
+      "input_sensitivity": [
+        {
+          "input_week_start": "2026-08-31",
+          "observed_1000kg": 723.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            1.18,
+            0.89,
+            0.65,
+            0.47
+          ],
+          "mean_absolute_change_1000kg": 0.8
+        },
+        {
+          "input_week_start": "2026-08-24",
+          "observed_1000kg": 733.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.57,
+            0.41,
+            0.28,
+            0.19
+          ],
+          "mean_absolute_change_1000kg": 0.36
+        },
+        {
+          "input_week_start": "2026-08-17",
+          "observed_1000kg": 730.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.28,
+            0.18,
+            0.11,
+            0.07
+          ],
+          "mean_absolute_change_1000kg": 0.16
+        },
+        {
+          "input_week_start": "2026-08-10",
+          "observed_1000kg": 865.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.23,
+            0.13,
+            0.07,
+            0.04
+          ],
+          "mean_absolute_change_1000kg": 0.12
+        },
+        {
+          "input_week_start": "2026-08-03",
+          "observed_1000kg": 924.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.17,
+            0.09,
+            0.04,
+            0.01
+          ],
+          "mean_absolute_change_1000kg": 0.08
+        },
+        {
+          "input_week_start": "2026-07-27",
+          "observed_1000kg": 867.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.11,
+            0.04,
+            0.01,
+            -0.01
+          ],
+          "mean_absolute_change_1000kg": 0.04
+        },
+        {
+          "input_week_start": "2026-07-13",
+          "observed_1000kg": 975.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.09,
+            0.03,
+            -0.0,
+            -0.01
+          ],
+          "mean_absolute_change_1000kg": 0.03
+        },
+        {
+          "input_week_start": "2026-07-20",
+          "observed_1000kg": 806.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.07,
+            0.02,
+            -0.01,
+            -0.01
+          ],
+          "mean_absolute_change_1000kg": 0.03
+        }
+      ]
+    },
+    "medium_1000kg": {
+      "original_median_1000kg_by_horizon": [
+        847.1,
+        856.53,
+        862.96,
+        870.46
+      ],
+      "input_sensitivity": [
+        {
+          "input_week_start": "2026-08-31",
+          "observed_1000kg": 756.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            1.19,
+            0.86,
+            0.62,
+            0.44
+          ],
+          "mean_absolute_change_1000kg": 0.78
+        },
+        {
+          "input_week_start": "2026-08-24",
+          "observed_1000kg": 765.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.53,
+            0.36,
+            0.24,
+            0.16
+          ],
+          "mean_absolute_change_1000kg": 0.32
+        },
+        {
+          "input_week_start": "2026-08-17",
+          "observed_1000kg": 698.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.21,
+            0.12,
+            0.06,
+            0.03
+          ],
+          "mean_absolute_change_1000kg": 0.11
+        },
+        {
+          "input_week_start": "2026-08-10",
+          "observed_1000kg": 802.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.15,
+            0.07,
+            0.02,
+            0.0
+          ],
+          "mean_absolute_change_1000kg": 0.06
+        },
+        {
+          "input_week_start": "2026-08-03",
+          "observed_1000kg": 884.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.11,
+            0.03,
+            -0.0,
+            -0.02
+          ],
+          "mean_absolute_change_1000kg": 0.04
+        },
+        {
+          "input_week_start": "2026-07-20",
+          "observed_1000kg": 814.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.04,
+            -0.01,
+            -0.03,
+            -0.03
+          ],
+          "mean_absolute_change_1000kg": 0.03
+        },
+        {
+          "input_week_start": "2026-07-27",
+          "observed_1000kg": 894.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.07,
+            0.01,
+            -0.02,
+            -0.03
+          ],
+          "mean_absolute_change_1000kg": 0.03
+        },
+        {
+          "input_week_start": "2026-07-13",
+          "observed_1000kg": 960.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.04,
+            -0.0,
+            -0.02,
+            -0.03
+          ],
+          "mean_absolute_change_1000kg": 0.02
+        }
+      ]
+    },
+    "low_1000kg": {
+      "original_median_1000kg_by_horizon": [
+        2983.72,
+        2991.13,
+        2998.88,
+        3004.59
+      ],
+      "input_sensitivity": [
+        {
+          "input_week_start": "2026-07-27",
+          "observed_1000kg": 2900.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            -0.51,
+            -0.62,
+            -0.62,
+            -0.57
+          ],
+          "mean_absolute_change_1000kg": 0.58
+        },
+        {
+          "input_week_start": "2026-08-31",
+          "observed_1000kg": 2881.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            1.44,
+            0.27,
+            -0.22,
+            -0.34
+          ],
+          "mean_absolute_change_1000kg": 0.57
+        },
+        {
+          "input_week_start": "2026-07-13",
+          "observed_1000kg": 2959.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            -0.52,
+            -0.56,
+            -0.53,
+            -0.46
+          ],
+          "mean_absolute_change_1000kg": 0.52
+        },
+        {
+          "input_week_start": "2026-08-03",
+          "observed_1000kg": 2962.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            -0.33,
+            -0.46,
+            -0.47,
+            -0.44
+          ],
+          "mean_absolute_change_1000kg": 0.43
+        },
+        {
+          "input_week_start": "2026-08-24",
+          "observed_1000kg": 2835.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.91,
+            0.05,
+            -0.26,
+            -0.34
+          ],
+          "mean_absolute_change_1000kg": 0.39
+        },
+        {
+          "input_week_start": "2026-08-10",
+          "observed_1000kg": 3020.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            -0.17,
+            -0.33,
+            -0.37,
+            -0.35
+          ],
+          "mean_absolute_change_1000kg": 0.31
+        },
+        {
+          "input_week_start": "2026-08-17",
+          "observed_1000kg": 2796.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.34,
+            -0.14,
+            -0.31,
+            -0.36
+          ],
+          "mean_absolute_change_1000kg": 0.29
+        },
+        {
+          "input_week_start": "2026-07-20",
+          "observed_1000kg": 2404.0,
+          "hypothetical_change": "+5% to this one observed week",
+          "median_forecast_change_1000kg_by_horizon": [
+            0.28,
+            0.29,
+            0.27,
+            0.22
+          ],
+          "mean_absolute_change_1000kg": 0.26
+        }
+      ]
+    }
+  }
+}

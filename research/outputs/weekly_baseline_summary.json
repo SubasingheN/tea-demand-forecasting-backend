@@ -1,176 +1,175 @@
 {
   "cutoff": "2026-01-01",
   "excluded_origins": {
-    "missing_future": 7,
-    "missing_history": 8
+    "missing_future": 4,
+    "missing_history": 4
   },
   "metrics": {
     "high_1000kg": {
       "last": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 61.71
+          "n_origins": 24,
+          "mae_1000kg": 68.42
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 90.29
+          "n_origins": 24,
+          "mae_1000kg": 84.83
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 98.82
+          "n_origins": 24,
+          "mae_1000kg": 99.42
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 85.29
+          "n_origins": 24,
+          "mae_1000kg": 89.25
         }
       },
       "mean4": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 60.16
+          "n_origins": 24,
+          "mae_1000kg": 62.78
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 74.72
+          "n_origins": 24,
+          "mae_1000kg": 70.89
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 92.6
+          "n_origins": 24,
+          "mae_1000kg": 77.3
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 99.43
+          "n_origins": 24,
+          "mae_1000kg": 84.93
         }
       }
     },
     "medium_1000kg": {
       "last": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 70.71
+          "n_origins": 24,
+          "mae_1000kg": 75.29
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 89.82
+          "n_origins": 24,
+          "mae_1000kg": 88.79
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 102.24
+          "n_origins": 24,
+          "mae_1000kg": 86.0
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 100.82
+          "n_origins": 24,
+          "mae_1000kg": 89.5
         }
       },
       "mean4": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 55.18
+          "n_origins": 24,
+          "mae_1000kg": 57.81
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 70.74
+          "n_origins": 24,
+          "mae_1000kg": 65.02
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 91.62
+          "n_origins": 24,
+          "mae_1000kg": 79.54
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 106.06
+          "n_origins": 24,
+          "mae_1000kg": 99.96
         }
       }
     },
     "low_1000kg": {
       "last": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 266.47
+          "n_origins": 24,
+          "mae_1000kg": 307.96
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 291.82
+          "n_origins": 24,
+          "mae_1000kg": 319.71
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 343.24
+          "n_origins": 24,
+          "mae_1000kg": 343.33
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 290.18
+          "n_origins": 24,
+          "mae_1000kg": 283.46
         }
       },
       "mean4": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 199.96
+          "n_origins": 24,
+          "mae_1000kg": 223.53
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 240.01
+          "n_origins": 24,
+          "mae_1000kg": 244.16
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 258.81
+          "n_origins": 24,
+          "mae_1000kg": 265.45
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 215.49
+          "n_origins": 24,
+          "mae_1000kg": 262.78
         }
       }
     },
     "total_1000kg": {
       "last": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 354.88
+          "n_origins": 24,
+          "mae_1000kg": 393.92
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 407.0
+          "n_origins": 24,
+          "mae_1000kg": 427.92
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 503.0
+          "n_origins": 24,
+          "mae_1000kg": 445.25
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 383.59
+          "n_origins": 24,
+          "mae_1000kg": 377.29
         }
       },
       "mean4": {
         "1": {
-          "n_origins": 17,
-          "mae_1000kg": 254.62
+          "n_origins": 24,
+          "mae_1000kg": 279.0
         },
         "2": {
-          "n_origins": 17,
-          "mae_1000kg": 311.15
+          "n_origins": 24,
+          "mae_1000kg": 302.06
         },
         "3": {
-          "n_origins": 17,
-          "mae_1000kg": 376.74
+          "n_origins": 24,
+          "mae_1000kg": 352.31
         },
         "4": {
-          "n_origins": 17,
-          "mae_1000kg": 351.0
+          "n_origins": 24,
+          "mae_1000kg": 387.04
         }
       }
     }
   },
-  "eligible_origins": 17,
+  "eligible_origins": 24,
   "unit": "thousand kilograms",
   "target_kind": "auction_sales_by_elevation",
   "weeks": 140,
-  "observed_weeks": 133,
+  "observed_weeks": 134,
   "missing_weeks": [
     "2024-04-08",
     "2024-12-30",
     "2025-04-14",
     "2025-10-27",
     "2025-12-01",
-    "2026-04-13",
-    "2026-06-01"
+    "2026-04-13"
   ],
   "note": "Missing weeks have blank targets; they are not zero sales or imputed demand. TFT is not evaluated here."
 }

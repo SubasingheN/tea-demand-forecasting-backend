@@ -1,51 +1,56 @@
 {
-  "scope": "Aggregate TFT variable reliance across nine observed test origins per elevation",
-  "caution": "Model-internal weights are not causal effects, forecast accuracy, or per-origin reasons. Only historical sales, relative time, and elevation were available as inputs.",
+  "scope": "Aggregate TFT variable reliance across observed test origins for each elevation",
+  "test_origins_per_target": {
+    "high_1000kg": 16,
+    "medium_1000kg": 16,
+    "low_1000kg": 16
+  },
+  "caution": "Model-internal weights are not causal effects, forecast accuracy, or explanations of individual forecasts. Only historical sales, relative time, and elevation were available as inputs.",
   "checkpoint": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\checkpoints\\auction-tft.ckpt",
   "results": {
     "high_1000kg": {
-      "test_origins": 9,
+      "test_origins": 16,
       "encoder_variables": {
-        "time_idx": 0.556361,
-        "relative_time_idx": 1.845189,
-        "sale_1000kg": 6.59845
+        "time_idx": 0.989263,
+        "relative_time_idx": 3.279807,
+        "sale_1000kg": 11.73093
       },
       "decoder_variables": {
-        "time_idx": 1.019646,
-        "relative_time_idx": 7.980354
+        "time_idx": 1.812704,
+        "relative_time_idx": 14.187298
       },
       "static_variables": {
-        "elevation": 9.0
+        "elevation": 16.0
       }
     },
     "medium_1000kg": {
-      "test_origins": 9,
+      "test_origins": 16,
       "encoder_variables": {
-        "time_idx": 0.568407,
-        "relative_time_idx": 1.713162,
-        "sale_1000kg": 6.718431
+        "time_idx": 1.010329,
+        "relative_time_idx": 3.04959,
+        "sale_1000kg": 11.940083
       },
       "decoder_variables": {
-        "time_idx": 1.019646,
-        "relative_time_idx": 7.980354
+        "time_idx": 1.812704,
+        "relative_time_idx": 14.187298
       },
       "static_variables": {
-        "elevation": 9.0
+        "elevation": 16.0
       }
     },
     "low_1000kg": {
-      "test_origins": 9,
+      "test_origins": 16,
       "encoder_variables": {
-        "time_idx": 0.584181,
-        "relative_time_idx": 1.655754,
-        "sale_1000kg": 6.760065
+        "time_idx": 1.037706,
+        "relative_time_idx": 2.9528,
+        "sale_1000kg": 12.009495
       },
       "decoder_variables": {
-        "time_idx": 1.019647,
-        "relative_time_idx": 7.980353
+        "time_idx": 1.812706,
+        "relative_time_idx": 14.187292
       },
       "static_variables": {
-        "elevation": 9.0
+        "elevation": 16.0
       }
     }
   }

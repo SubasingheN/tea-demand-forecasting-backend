@@ -1,0 +1,56 @@
+{
+  "selection_period": "2025 validation",
+  "report_period": "2026 test",
+  "unit": "thousand kg MAE across four forecast weeks",
+  "caution": "Exploratory analysis: the 2026 test results had already been inspected. Confirm the selection rule on later untouched auction observations.",
+  "elevations": {
+    "high_1000kg": {
+      "validation_origins": 13,
+      "test_origins": 16,
+      "validation_mae_1000kg": {
+        "last": 78.88,
+        "mean4": 93.92,
+        "tft": 64.49
+      },
+      "selected_method": "tft",
+      "test_mae_1000kg": {
+        "last": 86.69,
+        "mean4": 86.35,
+        "tft": 80.74
+      },
+      "selected_test_mae_1000kg": 80.74
+    },
+    "medium_1000kg": {
+      "validation_origins": 13,
+      "test_origins": 16,
+      "validation_mae_1000kg": {
+        "last": 76.85,
+        "mean4": 93.45,
+        "tft": 76.76
+      },
+      "selected_method": "tft",
+      "test_mae_1000kg": {
+        "last": 88.89,
+        "mean4": 87.95,
+        "tft": 125.41
+      },
+      "selected_test_mae_1000kg": 125.41
+    },
+    "low_1000kg": {
+      "validation_origins": 13,
+      "test_origins": 16,
+      "validation_mae_1000kg": {
+        "last": 117.13,
+        "mean4": 138.34,
+        "tft": 122.69
+      },
+      "selected_method": "last",
+      "test_mae_1000kg": {
+        "last": 286.58,
+        "mean4": 212.69,
+        "tft": 185.94
+      },
+      "selected_test_mae_1000kg": 286.58
+    }
+  }
+}

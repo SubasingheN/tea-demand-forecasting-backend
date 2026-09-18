@@ -1,0 +1,346 @@
+{
+  "target_kind": "observed_auction_sales_by_elevation",
+  "experiment": "historical average auction price input vs volume-only TFT",
+  "unit": "thousand kg MAE",
+  "test_origins_per_elevation": 16,
+  "warning": "Exploratory ablation: 2026 test outcomes were inspected before this experiment. No causal effect of price or confirmatory improvement can be claimed.",
+  "metrics": [
+    {
+      "target": "high_1000kg",
+      "method": "last",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 68.56
+    },
+    {
+      "target": "high_1000kg",
+      "method": "last",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 87.19
+    },
+    {
+      "target": "high_1000kg",
+      "method": "last",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 93.38
+    },
+    {
+      "target": "high_1000kg",
+      "method": "last",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 97.62
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "last",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 72.25
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "last",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 97.0
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "last",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 90.31
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "last",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 96.0
+    },
+    {
+      "target": "low_1000kg",
+      "method": "last",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 258.75
+    },
+    {
+      "target": "low_1000kg",
+      "method": "last",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 342.5
+    },
+    {
+      "target": "low_1000kg",
+      "method": "last",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 304.44
+    },
+    {
+      "target": "low_1000kg",
+      "method": "last",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 240.62
+    },
+    {
+      "target": "high_1000kg",
+      "method": "mean4",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 63.59
+    },
+    {
+      "target": "high_1000kg",
+      "method": "mean4",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 78.53
+    },
+    {
+      "target": "high_1000kg",
+      "method": "mean4",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 94.38
+    },
+    {
+      "target": "high_1000kg",
+      "method": "mean4",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 108.91
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "mean4",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 62.5
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "mean4",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 81.16
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "mean4",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 92.53
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "mean4",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 115.62
+    },
+    {
+      "target": "low_1000kg",
+      "method": "mean4",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 215.16
+    },
+    {
+      "target": "low_1000kg",
+      "method": "mean4",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 232.5
+    },
+    {
+      "target": "low_1000kg",
+      "method": "mean4",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 189.84
+    },
+    {
+      "target": "low_1000kg",
+      "method": "mean4",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 213.25
+    },
+    {
+      "target": "high_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 75.03
+    },
+    {
+      "target": "high_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 79.01
+    },
+    {
+      "target": "high_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 82.46
+    },
+    {
+      "target": "high_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 86.48
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 112.45
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 118.58
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 133.99
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 136.63
+    },
+    {
+      "target": "low_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 217.48
+    },
+    {
+      "target": "low_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 199.11
+    },
+    {
+      "target": "low_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 167.69
+    },
+    {
+      "target": "low_1000kg",
+      "method": "volume_only_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 159.49
+    },
+    {
+      "target": "high_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 85.55
+    },
+    {
+      "target": "high_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 95.28
+    },
+    {
+      "target": "high_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 93.34
+    },
+    {
+      "target": "high_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 98.15
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 117.43
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 120.32
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 132.37
+    },
+    {
+      "target": "medium_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 127.89
+    },
+    {
+      "target": "low_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 1,
+      "n_origins": 16,
+      "mae_1000kg": 229.19
+    },
+    {
+      "target": "low_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 2,
+      "n_origins": 16,
+      "mae_1000kg": 241.86
+    },
+    {
+      "target": "low_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 3,
+      "n_origins": 16,
+      "mae_1000kg": 188.49
+    },
+    {
+      "target": "low_1000kg",
+      "method": "price_aware_tft",
+      "horizon_week": 4,
+      "n_origins": 16,
+      "mae_1000kg": 162.56
+    }
+  ],
+  "checkpoint": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\checkpoints\\auction-tft-with-price.ckpt"
+}

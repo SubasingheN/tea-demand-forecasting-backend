@@ -1,0 +1,42 @@
+{
+  "test_origins_per_elevation": 16,
+  "unit": "thousand kg MAE over four forecast weeks",
+  "comparison": {
+    "last": {
+      "high_1000kg": 86.69,
+      "medium_1000kg": 88.89,
+      "low_1000kg": 286.58
+    },
+    "mean4": {
+      "high_1000kg": 86.35,
+      "medium_1000kg": 87.95,
+      "low_1000kg": 212.69
+    },
+    "original_tft": {
+      "high_1000kg": 80.74,
+      "medium_1000kg": 125.41,
+      "low_1000kg": 185.94
+    },
+    "elevation_scaled_tft": {
+      "high_1000kg": 88.59,
+      "medium_1000kg": 117.87,
+      "low_1000kg": 182.9
+    }
+  },
+  "caution": "Exploratory: 2026 test outcomes were inspected before this ablation. Confirm any improvement on later untouched data.",
+  "training_scales": {
+    "high": {
+      "mean_1000kg": 935.0208333333334,
+      "std_1000kg": 118.37689009109376
+    },
+    "medium": {
+      "mean_1000kg": 872.6901041666666,
+      "std_1000kg": 101.96836369060331
+    },
+    "low": {
+      "mean_1000kg": 3028.125,
+      "std_1000kg": 282.5875970385112
+    }
+  },
+  "checkpoint": "C:\\Users\\nuwan\\tea-demand-backend\\research\\outputs\\checkpoints\\auction-tft-by-elevation.ckpt"
+}

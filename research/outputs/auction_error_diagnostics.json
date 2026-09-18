@@ -1,0 +1,112 @@
+{
+  "target_kind": "observed_auction_sales_by_elevation",
+  "unit": "thousand kg",
+  "caution": "Overlapping four-week forecast windows; errors are descriptive. Test outcomes were inspected during development.",
+  "by_elevation": {
+    "high_1000kg": {
+      "origins": 16,
+      "mean_origin_mae_1000kg": {
+        "earlier": {
+          "last": 71.06,
+          "mean4": 71.2,
+          "tft": 75.59
+        },
+        "later": {
+          "last": 102.31,
+          "mean4": 101.5,
+          "tft": 85.91
+        }
+      },
+      "worst_three_tft_origins": [
+        {
+          "target": "high_1000kg",
+          "origin_week": "2026-06-15",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 141.98
+        },
+        {
+          "target": "high_1000kg",
+          "origin_week": "2026-06-08",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 131.38
+        },
+        {
+          "target": "high_1000kg",
+          "origin_week": "2026-06-22",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 118.39
+        }
+      ]
+    },
+    "medium_1000kg": {
+      "origins": 16,
+      "mean_origin_mae_1000kg": {
+        "earlier": {
+          "last": 71.09,
+          "mean4": 69.47,
+          "tft": 167.44
+        },
+        "later": {
+          "last": 106.69,
+          "mean4": 106.44,
+          "tft": 83.39
+        }
+      },
+      "worst_three_tft_origins": [
+        {
+          "target": "medium_1000kg",
+          "origin_week": "2026-02-23",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 215.9
+        },
+        {
+          "target": "medium_1000kg",
+          "origin_week": "2026-03-02",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 202.56
+        },
+        {
+          "target": "medium_1000kg",
+          "origin_week": "2026-03-09",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 188.89
+        }
+      ]
+    },
+    "low_1000kg": {
+      "origins": 16,
+      "mean_origin_mae_1000kg": {
+        "earlier": {
+          "last": 259.47,
+          "mean4": 249.06,
+          "tft": 202.67
+        },
+        "later": {
+          "last": 313.69,
+          "mean4": 176.31,
+          "tft": 169.22
+        }
+      },
+      "worst_three_tft_origins": [
+        {
+          "target": "low_1000kg",
+          "origin_week": "2026-06-08",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 317.67
+        },
+        {
+          "target": "low_1000kg",
+          "origin_week": "2026-06-15",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 234.9
+        },
+        {
+          "target": "low_1000kg",
+          "origin_week": "2026-06-22",
+          "method": "tft",
+          "mae_four_weeks_1000kg": 234.53
+        }
+      ]
+    }
+  }
+}

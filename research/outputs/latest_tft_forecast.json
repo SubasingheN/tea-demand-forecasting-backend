@@ -1,0 +1,107 @@
+{
+  "target_kind": "observed_auction_sales_by_elevation",
+  "unit": "thousand kg",
+  "origin_week_start": "2026-08-31",
+  "last_source_sale_date": "2026-09-02",
+  "encoder_observed_weeks": 8,
+  "scope": "Research forecast from the last available eight observed calendar weeks",
+  "caution": "Historical-source forecast until the auction table is refreshed. Nominal 10th\u201390th percentile ranges are poorly calibrated for medium-grown sales. No grade-level customer demand is forecast here.",
+  "forecasts": [
+    {
+      "target": "high_1000kg",
+      "week_start": "2026-09-07",
+      "horizon_week": 1,
+      "p10_1000kg": 693.02,
+      "p50_1000kg": 844.84,
+      "p90_1000kg": 972.93
+    },
+    {
+      "target": "high_1000kg",
+      "week_start": "2026-09-14",
+      "horizon_week": 2,
+      "p10_1000kg": 727.87,
+      "p50_1000kg": 858.06,
+      "p90_1000kg": 990.43
+    },
+    {
+      "target": "high_1000kg",
+      "week_start": "2026-09-21",
+      "horizon_week": 3,
+      "p10_1000kg": 748.52,
+      "p50_1000kg": 866.21,
+      "p90_1000kg": 986.04
+    },
+    {
+      "target": "high_1000kg",
+      "week_start": "2026-09-28",
+      "horizon_week": 4,
+      "p10_1000kg": 767.83,
+      "p50_1000kg": 873.82,
+      "p90_1000kg": 971.88
+    },
+    {
+      "target": "medium_1000kg",
+      "week_start": "2026-09-07",
+      "horizon_week": 1,
+      "p10_1000kg": 698.54,
+      "p50_1000kg": 847.1,
+      "p90_1000kg": 976.56
+    },
+    {
+      "target": "medium_1000kg",
+      "week_start": "2026-09-14",
+      "horizon_week": 2,
+      "p10_1000kg": 727.1,
+      "p50_1000kg": 856.53,
+      "p90_1000kg": 987.23
+    },
+    {
+      "target": "medium_1000kg",
+      "week_start": "2026-09-21",
+      "horizon_week": 3,
+      "p10_1000kg": 746.82,
+      "p50_1000kg": 862.96,
+      "p90_1000kg": 981.05
+    },
+    {
+      "target": "medium_1000kg",
+      "week_start": "2026-09-28",
+      "horizon_week": 4,
+      "p10_1000kg": 766.21,
+      "p50_1000kg": 870.46,
+      "p90_1000kg": 966.99
+    },
+    {
+      "target": "low_1000kg",
+      "week_start": "2026-09-07",
+      "horizon_week": 1,
+      "p10_1000kg": 2434.73,
+      "p50_1000kg": 2983.72,
+      "p90_1000kg": 3298.77
+    },
+    {
+      "target": "low_1000kg",
+      "week_start": "2026-09-14",
+      "horizon_week": 2,
+      "p10_1000kg": 2429.24,
+      "p50_1000kg": 2991.13,
+      "p90_1000kg": 3288.93
+    },
+    {
+      "target": "low_1000kg",
+      "week_start": "2026-09-21",
+      "horizon_week": 3,
+      "p10_1000kg": 2418.49,
+      "p50_1000kg": 2998.88,
+      "p90_1000kg": 3268.22
+    },
+    {
+      "target": "low_1000kg",
+      "week_start": "2026-09-28",
+      "horizon_week": 4,
+      "p10_1000kg": 2400.48,
+      "p50_1000kg": 3004.59,
+      "p90_1000kg": 3234.77
+    }
+  ]
+}

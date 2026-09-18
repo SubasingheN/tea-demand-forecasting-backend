@@ -1,91 +1,96 @@
 {
   "interval": "model 10th\u201390th percentiles (nominal 80%)",
   "unit": "thousand kg of observed auction sales",
-  "note": "Nine overlapping test origins per elevation. Empirical coverage is descriptive, not a calibrated confidence guarantee.",
+  "origin_count_per_target": {
+    "high_1000kg": 16,
+    "low_1000kg": 16,
+    "medium_1000kg": 16
+  },
+  "note": "Forecast origins overlap. Empirical coverage is descriptive, not a calibrated confidence guarantee.",
   "results": [
     {
       "target": "high_1000kg",
       "horizon_week": 1,
-      "n": 9,
-      "coverage": 1.0,
-      "mean_width_1000kg": 287.52
+      "n": 16,
+      "coverage": 0.8125,
+      "mean_width_1000kg": 289.67
     },
     {
       "target": "high_1000kg",
       "horizon_week": 2,
-      "n": 9,
-      "coverage": 1.0,
-      "mean_width_1000kg": 268.32
+      "n": 16,
+      "coverage": 0.8125,
+      "mean_width_1000kg": 269.85
     },
     {
       "target": "high_1000kg",
       "horizon_week": 3,
-      "n": 9,
-      "coverage": 0.6667,
-      "mean_width_1000kg": 241.47
+      "n": 16,
+      "coverage": 0.6875,
+      "mean_width_1000kg": 242.43
     },
     {
       "target": "high_1000kg",
       "horizon_week": 4,
-      "n": 9,
-      "coverage": 0.6667,
-      "mean_width_1000kg": 206.69
+      "n": 16,
+      "coverage": 0.6875,
+      "mean_width_1000kg": 207.25
     },
     {
       "target": "low_1000kg",
       "horizon_week": 1,
-      "n": 9,
-      "coverage": 1.0,
-      "mean_width_1000kg": 865.86
+      "n": 16,
+      "coverage": 0.8125,
+      "mean_width_1000kg": 866.84
     },
     {
       "target": "low_1000kg",
       "horizon_week": 2,
-      "n": 9,
-      "coverage": 1.0,
-      "mean_width_1000kg": 857.78
+      "n": 16,
+      "coverage": 0.875,
+      "mean_width_1000kg": 857.6
     },
     {
       "target": "low_1000kg",
       "horizon_week": 3,
-      "n": 9,
-      "coverage": 1.0,
-      "mean_width_1000kg": 846.58
+      "n": 16,
+      "coverage": 0.9375,
+      "mean_width_1000kg": 846.03
     },
     {
       "target": "low_1000kg",
       "horizon_week": 4,
-      "n": 9,
+      "n": 16,
       "coverage": 1.0,
-      "mean_width_1000kg": 830.58
+      "mean_width_1000kg": 829.9
     },
     {
       "target": "medium_1000kg",
       "horizon_week": 1,
-      "n": 9,
-      "coverage": 0.6667,
-      "mean_width_1000kg": 278.61
+      "n": 16,
+      "coverage": 0.625,
+      "mean_width_1000kg": 282.67
     },
     {
       "target": "medium_1000kg",
       "horizon_week": 2,
-      "n": 9,
-      "coverage": 0.4444,
-      "mean_width_1000kg": 260.55
+      "n": 16,
+      "coverage": 0.5625,
+      "mean_width_1000kg": 263.34
     },
     {
       "target": "medium_1000kg",
       "horizon_week": 3,
-      "n": 9,
-      "coverage": 0.3333,
-      "mean_width_1000kg": 234.56
+      "n": 16,
+      "coverage": 0.5,
+      "mean_width_1000kg": 236.25
     },
     {
       "target": "medium_1000kg",
       "horizon_week": 4,
-      "n": 9,
-      "coverage": 0.1111,
-      "mean_width_1000kg": 201.03
+      "n": 16,
+      "coverage": 0.375,
+      "mean_width_1000kg": 201.99
     }
   ]
 }

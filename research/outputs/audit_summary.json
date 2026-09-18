@@ -1,0 +1,86 @@
+{
+  "target_definition": "Observed Colombo auction sale quantity by elevation; not factory orders or tea grades",
+  "unit": "thousand kilograms (as rounded in source PDFs)",
+  "rows_by_year": {
+    "2024": 51,
+    "2025": 49,
+    "2026": 34
+  },
+  "first_sale": "2024-01-05",
+  "last_sale": "2026-09-02",
+  "issues": [
+    "Weekly Tea Auction Quantities & Averages 2025_1767253314.pdf:32: corrected printed date 14-MAT-2025 to 14-MAY-2025",
+    "Weekly Tea Auction Quantities & Averages 2026_1788848249.pdf:37: corrected printed date 03-JUNE-2026 to 03-JUN-2026",
+    "Weekly Tea Auction Quantities & Averages 2026_1788848249.pdf:43: corrected printed date 01-JUL-2027 to 01-JUL-2026"
+  ],
+  "baseline": {
+    "high_1000kg": {
+      "origins": 31,
+      "mae_1000kg_by_horizon": {
+        "last": [
+          72.35,
+          91.16,
+          104.48,
+          98.9
+        ],
+        "mean4": [
+          67.56,
+          83.35,
+          92.71,
+          97.9
+        ]
+      }
+    },
+    "medium_1000kg": {
+      "origins": 31,
+      "mae_1000kg_by_horizon": {
+        "last": [
+          71.9,
+          95.58,
+          102.29,
+          112.48
+        ],
+        "mean4": [
+          70.65,
+          90.44,
+          109.87,
+          133.16
+        ]
+      }
+    },
+    "low_1000kg": {
+      "origins": 31,
+      "mae_1000kg_by_horizon": {
+        "last": [
+          273.1,
+          283.58,
+          307.03,
+          265.48
+        ],
+        "mean4": [
+          195.97,
+          218.97,
+          239.1,
+          233.69
+        ]
+      }
+    },
+    "total_1000kg": {
+      "origins": 31,
+      "mae_1000kg_by_horizon": {
+        "last": [
+          361.29,
+          395.16,
+          424.58,
+          386.68
+        ],
+        "mean4": [
+          269.21,
+          314.92,
+          373.42,
+          415.02
+        ]
+      }
+    }
+  }
+}
