@@ -18,11 +18,17 @@ EXPECTED = {(target, horizon) for target in TARGETS for horizon in HORIZONS}
 def read_json(filename):
     path = OUTPUTS / filename
     if not path.is_file():
-        raise HTTPException(status_code=503, detail=f"Missing research output: {filename}")
+        raise HTTPException(
+            status_code=503,
+            detail=f"Missing research output: {filename}",
+        )
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
-        raise HTTPException(status_code=503, detail=f"Unreadable research output: {filename}") from exc
+        raise HTTPException(
+            status_code=503,
+            detail=f"Unreadable research output: {filename}",
+        ) from exc
 
 
 def forecast_baselines(origin):
@@ -31,12 +37,15 @@ def forecast_baselines(origin):
     try:
         with path.open(newline="", encoding="utf-8-sig") as handle:
             weeks = list(csv.DictReader(handle))
+
         origins = [
-            index for index, row in enumerate(weeks)
+            index
+            for index, row in enumerate(weeks)
             if row["week_start"] == origin.isoformat()
         ]
         if len(origins) != 1 or origins[0] < 7:
             raise ValueError("Forecast origin absent from calendar")
+
         history = weeks[origins[0] - 7:origins[0] + 1]
         if any(
             date.fromisoformat(row["week_start"])
@@ -45,11 +54,13 @@ def forecast_baselines(origin):
             for index, row in enumerate(history)
         ):
             raise ValueError("Incomplete eight-week forecast history")
+
         return {
             target: {
                 "last_1000kg": float(history[-1][target]),
                 "mean4_1000kg": round(
-                    sum(float(row[target]) for row in history[-4:]) / 4, 2
+                    sum(float(row[target]) for row in history[-4:]) / 4,
+                    2,
                 ),
             }
             for target in TARGETS
@@ -65,11 +76,20 @@ def forecast_baselines(origin):
 def auction_research_results():
     evaluation = read_json("tft_comparison.json")
     intervals = read_json("tft_interval_summary.json")
+
     if evaluation.get("target_kind") != "observed_auction_sales_by_elevation":
-        raise HTTPException(status_code=503, detail="Unexpected auction evaluation target")
+        raise HTTPException(
+            status_code=503,
+            detail="Unexpected auction evaluation target",
+        )
+
     origin_count = evaluation.get("origin_count_per_target")
     if type(origin_count) is not int or origin_count < 1:
-        raise HTTPException(status_code=503, detail="Invalid test-origin count")
+        raise HTTPException(
+            status_code=503,
+            detail="Invalid test-origin count",
+        )
+
     interval_rows = intervals.get("results", [])
     if (
         len(interval_rows) != len(EXPECTED)
@@ -127,7 +147,10 @@ def auction_research_results():
             and item.get("test_origins_per_elevation") == origin_count
             and len(metrics) == len(expected_metrics)
             and keys == expected_metrics
-            and all(row.get("n_origins") == origin_count for row in metrics)
+            and all(
+                row.get("n_origins") == origin_count
+                for row in metrics
+            )
         ):
             item.pop("checkpoint", None)
             ablation = item
@@ -169,9 +192,11 @@ def auction_research_forecast():
             status_code=503,
             detail="Auction forecast origin is invalid",
         ) from exc
+
     rows = forecast.get("forecasts", [])
     if (
-        forecast.get("target_kind") != "observed_auction_sales_by_elevation"
+        forecast.get("target_kind")
+        != "observed_auction_sales_by_elevation"
         or len(rows) != len(EXPECTED)
         or {
             (row.get("target"), row.get("horizon_week"))
@@ -220,4 +245,91 @@ def auction_research_forecast():
             else "Historical source week; refresh published auction data before new decisions"
         ),
         "local_explanation": explanation,
+    }
+
+
+@router.get("/prospective")
+def auction_research_prospective():
+    """Expose the committed forecast snapshot; never substitute a new forecast."""
+    snapshot = read_json(
+        "prospective/auction_forecast_20260917T222937Z.json"
+    )
+    if (
+        snapshot.get("target_kind")
+        != "observed_auction_sales_by_elevation"
+        or snapshot.get("issued_at_utc")
+        != "2026-09-17T22:29:37.909548+00:00"
+        or len(snapshot.get("forecasts", [])) != 6
+        or {
+            (row.get("target"), row.get("target_week_start"))
+            for row in snapshot["forecasts"]
+        }
+        != {
+            (target, week)
+            for target in TARGETS
+            for week in ("2026-09-21", "2026-09-28")
+        }
+    ):
+        raise HTTPException(
+            status_code=503,
+            detail="Frozen forecast snapshot is invalid",
+        )
+
+    calendar_path = OUTPUTS / "auction_calendar_weeks.csv"
+    try:
+        with calendar_path.open(newline="", encoding="utf-8-sig") as handle:
+            calendar = {
+                row["week_start"]: row
+                for row in csv.DictReader(handle)
+            }
+    except (OSError, KeyError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Auction calendar unavailable",
+        ) from exc
+
+    results = []
+    for prediction in snapshot["forecasts"]:
+        row = calendar.get(prediction["target_week_start"])
+        result = {
+            **prediction,
+            "outcome_status": "awaiting published sale",
+        }
+        if (
+            row
+            and row.get("sale_count") == "1"
+            and row.get(prediction["target"])
+        ):
+            try:
+                sale_date = date.fromisoformat(row["source_sale_dates"])
+                if sale_date <= date.fromisoformat("2026-09-17"):
+                    raise ValueError("Sale date precedes snapshot")
+                result["outcome_status"] = (
+                    "observed in local auction dataset"
+                )
+                result["actual_1000kg"] = float(
+                    row[prediction["target"]]
+                )
+                result["sale_date"] = sale_date.isoformat()
+            except (ValueError, TypeError) as exc:
+                raise HTTPException(
+                    status_code=503,
+                    detail="Invalid prospective outcome date",
+                ) from exc
+        results.append(result)
+
+    return {
+        "issued_at_utc": snapshot["issued_at_utc"],
+        "last_source_sale_date": snapshot["last_source_sale_date"],
+        "unit": snapshot["unit"],
+        "target_kind": snapshot["target_kind"],
+        "scope_note": (
+            "Frozen before the target weeks; only two future weeks "
+            "were eligible on issuance."
+        ),
+        "outcome_note": (
+            "Local observations require source verification and scoring "
+            "before an accuracy claim."
+        ),
+        "forecasts": results,
     }
