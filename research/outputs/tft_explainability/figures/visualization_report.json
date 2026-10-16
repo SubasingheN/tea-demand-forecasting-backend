@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "step": 18,
+  "model": "selected_no_price_tft",
+  "interpretation_partition": "2024_validation",
+  "validation_windows": 250,
+  "encoder_weeks": 52,
+  "forecast_horizon_weeks": 4,
+  "figure_count": 4,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "png_dpi": 300,
+  "source_files": {
+    "static": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\static_feature_importance.csv",
+    "encoder": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\encoder_feature_importance.csv",
+    "decoder": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\decoder_feature_importance.csv",
+    "attention": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\historical_attention.csv"
+  },
+  "figures": {
+    "static": {
+      "png": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_01_static_feature_importance.png",
+      "svg": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_01_static_feature_importance.svg"
+    },
+    "encoder": {
+      "png": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_02_historical_feature_importance.png",
+      "svg": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_02_historical_feature_importance.svg"
+    },
+    "decoder": {
+      "png": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_03_future_feature_importance.png",
+      "svg": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_03_future_feature_importance.svg"
+    },
+    "attention": {
+      "png": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_04_historical_attention_52_weeks.png",
+      "svg": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\figures\\figure_04_historical_attention_52_weeks.svg"
+    }
+  },
+  "input_checks": {
+    "static_importance_total_percent": 100.0,
+    "encoder_importance_total_percent": 99.99999999999999,
+    "decoder_importance_total_percent": 99.99999999999999,
+    "attention_total_percent": 100.0
+  },
+  "methodological_notes": [
+    "All numerical values are read from Step 17.",
+    "Variable-selection percentages are normalized within each feature group.",
+    "Percentages across static, encoder and decoder groups cannot be compared directly.",
+    "Temporal attention is aggregated across 2024 validation forecast windows.",
+    "Attention and variable selection are not causal explanations.",
+    "No model training or test prediction was performed."
+  ],
+  "generated_at_utc": "2026-10-16T03:22:15.571729+00:00"
+}

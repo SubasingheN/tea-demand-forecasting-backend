@@ -1,0 +1,93 @@
+{
+  "experiment": "tft_no_price_ablation",
+  "status": "PASS",
+  "started_at_utc": "2026-10-16T01:48:59.117213+00:00",
+  "finished_at_utc": "2026-10-16T01:55:21.548362+00:00",
+  "model": "TemporalFusionTransformer",
+  "target": "demand_kg",
+  "target_definition": "Total customer orders including unfulfilled orders",
+  "auction_price_features": [],
+  "auction_price_ablation": true,
+  "grades": [
+    "BOP",
+    "BOPF",
+    "Dust",
+    "OP",
+    "Pekoe"
+  ],
+  "encoder_length": 52,
+  "prediction_length": 4,
+  "seed": 42,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "training_settings": {
+    "hidden_size": 16,
+    "attention_heads": 2,
+    "hidden_continuous_size": 8,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 30,
+    "early_stopping_patience": 5
+  },
+  "epochs_completed": 15,
+  "best_validation_quantile_loss": 470.26763916015625,
+  "best_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_no_price\\checkpoints\\tft-no-price-epoch09-val470.2676.ckpt",
+  "training_log_directory": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_no_price\\logs\\tft_no_price_training\\version_0",
+  "dataset_windows": {
+    "train": 4680,
+    "validation": 250,
+    "test": 445
+  },
+  "split_validation": {
+    "train": {
+      "expected_windows": 4680,
+      "actual_windows": 4680,
+      "manifest_alignment": "PASS"
+    },
+    "validation": {
+      "expected_windows": 250,
+      "actual_windows": 250,
+      "manifest_alignment": "PASS"
+    },
+    "test": {
+      "expected_windows": 445,
+      "actual_windows": 445,
+      "manifest_alignment": "PASS"
+    }
+  },
+  "known_future_features": [
+    "time_idx",
+    "week_sin",
+    "week_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "historical_only_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg"
+  ],
+  "model_parameters": 24639,
+  "callback_metrics": {
+    "train_loss": 431.7773132324219,
+    "train_loss_step": 359.0310974121094,
+    "val_loss": 478.684814453125,
+    "val_SMAPE": 0.05948319286108017,
+    "val_MAE": 724.6314086914062,
+    "val_RMSE": 896.1065673828125,
+    "val_MAPE": 0.06012294441461563,
+    "train_loss_epoch": 431.7773132324219
+  },
+  "test_partition_evaluated": false,
+  "research_notes": [
+    "Auction price values and availability masks were removed.",
+    "The same chronological split, forecast horizon, model hyperparameters and random seed were used.",
+    "Validation data was used for model checkpoint selection.",
+    "The held-out test partition was not evaluated.",
+    "Forecast MAE and interval coverage must be compared separately using matched validation windows."
+  ]
+}

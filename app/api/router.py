@@ -1,3 +1,4 @@
+
 from fastapi import APIRouter
 
 from app.api.health import router as health_router
@@ -9,6 +10,11 @@ from app.api.explainability import router as explainability_router
 from app.api.alerts import router as alerts_router
 from app.api.recommendations import router as recommendations_router
 from app.api.demo import router as demo_router
+
+# Step 20: Selected research TFT forecasts
+from app.api.research_forecast import (
+    router as research_forecast_router,
+)
 
 
 api_router = APIRouter()
@@ -23,3 +29,6 @@ api_router.include_router(explainability_router)
 api_router.include_router(alerts_router)
 api_router.include_router(recommendations_router)
 api_router.include_router(demo_router)
+
+# Separate research endpoint: preserves existing APIs.
+api_router.include_router(research_forecast_router)

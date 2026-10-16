@@ -1,0 +1,4 @@
+rank,feature,raw_importance,relative_importance_percent,feature_group
+1,grade,132.2822265625,52.91289304716002,static
+2,demand_kg_scale,100.15409851074219,40.06164123817327,static
+3,demand_kg_center,17.563663482666016,7.025465714666704,static

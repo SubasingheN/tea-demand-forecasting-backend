@@ -1,0 +1,3 @@
+coverage_group,forecast_windows,prediction_rows,average_encoder_price_weeks,with_price_mae_kg,no_price_mae_kg,price_mae_benefit_kg,price_mae_benefit_percent
+high_39_to_52,150,600,46.38,700.2830712890625,650.6707088216145,-49.61236246744795,-7.624803421272416
+none,100,400,0.0,878.78044921875,801.121201171875,-77.65924804687506,-9.693820102785397

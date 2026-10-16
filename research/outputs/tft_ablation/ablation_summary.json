@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "partition": "2024_validation",
+  "matched_prediction_rows": 1000,
+  "forecast_windows": 250,
+  "with_price_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_full_training\\checkpoints\\tft-epoch09-val496.3011.ckpt",
+  "no_price_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_no_price\\checkpoints\\tft-no-price-epoch09-val470.2676.ckpt",
+  "overall": {
+    "group": "overall",
+    "with_price_mae_kg": 771.6820224609374,
+    "no_price_mae_kg": 710.8509057617188,
+    "with_price_rmse_kg": 1052.8324206704424,
+    "no_price_rmse_kg": 1000.675115600333,
+    "with_price_wape_percent": 6.040394503707352,
+    "no_price_wape_percent": 5.5642347225159465,
+    "with_price_interval_coverage_percent": 88.8,
+    "no_price_interval_coverage_percent": 85.5,
+    "price_mae_benefit_percent": -8.55750709553286
+  },
+  "test_partition_evaluated": false,
+  "notes": [
+    "The two models use identical target dates.",
+    "Price ablation removes quotation price inputs and price availability masks.",
+    "Auction-price effects are observational, not causal.",
+    "The held-out test data remains reserved."
+  ],
+  "timestamp_utc": "2026-10-16T03:02:02.243604+00:00"
+}

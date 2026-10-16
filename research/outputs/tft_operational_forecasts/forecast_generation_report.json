@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "step": 19,
+  "model": "no_price_tft",
+  "forecast_origin": "2026-10-05",
+  "forecast_count": 20,
+  "historical_input_weeks": 52,
+  "forecast_horizon_weeks": 4,
+  "week_encoding_period": 52.1775,
+  "month_encoding_period": 12.0,
+  "future_observed_inputs_used": false,
+  "model_retraining": false,
+  "outputs": {
+    "csv": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_operational_forecasts\\next_four_weeks_forecasts.csv",
+    "json": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_operational_forecasts\\next_four_weeks_forecasts.json"
+  },
+  "generated_at_utc": "2026-10-16T03:34:45.223376+00:00"
+}

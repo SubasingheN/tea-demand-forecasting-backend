@@ -1,0 +1,11 @@
+partition,grade,forecast_windows,average_high_price_weeks,average_medium_price_weeks,average_any_price_weeks,windows_without_prices,windows_with_price_at_origin
+train,BOP,936,3.8707264957264957,3.6378205128205128,3.926282051282051,786,95
+train,BOPF,936,3.841880341880342,2.3824786324786325,3.8707264957264957,786,94
+train,Dust,936,0.0,0.0,0.0,936,0
+train,OP,936,3.926282051282051,3.909188034188034,3.926282051282051,786,95
+train,Pekoe,936,0.0,0.0,0.0,936,0
+validation,BOP,50,46.38,45.84,46.38,0,46
+validation,BOPF,50,45.94,30.98,46.38,0,46
+validation,Dust,50,0.0,0.0,0.0,50,0
+validation,OP,50,46.38,45.72,46.38,0,46
+validation,Pekoe,50,0.0,0.0,0.0,50,0

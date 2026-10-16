@@ -1,36 +1,98 @@
-# Python virtual environment
+
+# ==================================================
+# PYTHON ENVIRONMENTS
+# ==================================================
+
 venv/
 .venv/
+env/
+ENV/
 
-# Python cache
+# ==================================================
+# PYTHON CACHE
+# ==================================================
+
 __pycache__/
 *.py[cod]
 *.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Environment variables
+# ==================================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# ==================================================
+
 .env
+.env.*
+!.env.example
 
-# IDE / editor
+*.pem
+*.key
+*.p12
+
+# ==================================================
+# IDE AND OPERATING SYSTEM
+# ==================================================
+
 .vscode/
 .idea/
-
-# Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Testing / cache
-.pytest_cache/
-.coverage
+# ==================================================
+# LOGS AND TEMPORARY FILES
+# ==================================================
 
-# Temporary files
-*.tmp
 *.log
-
-# Training experiment logs
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
 lightning_logs/
 
-# Generated PDF reports
-reports/*.pdf
+# ==================================================
+# PRIVATE / EXTERNAL DATASETS
+# ==================================================
 
-# Legacy/local forecast history
+data/external/
+data/processed/
+data/validated/
+
+data/tea_inventory_tft_dataset new.csv
+
+# ==================================================
+# TEMPORARY RESEARCH REVIEW PACKAGES
+# ==================================================
+
+phase1_review_package/
+phase1_review_package.zip
+
+# ==================================================
+# GENERATED APPLICATION OUTPUTS
+# ==================================================
+
+reports/*.pdf
 data/forecast_history.json
+
+# ==================================================
+# OPTIONAL LOCAL DATABASE FILES
+# ==================================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+# ==================================================
+# IMPORTANT: KEEP RESEARCH ARTIFACTS
+# ==================================================
+
+# Do not ignore research/.
+# Research scripts, selected checkpoints,
+# saved test metrics, forecasts and explanation
+# results are required for reproducibility.

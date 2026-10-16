@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "step": 17,
+  "model": "no_price_tft",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_no_price\\checkpoints\\tft-no-price-epoch09-val470.2676.ckpt",
+  "interpretation_partition": "2024_validation",
+  "forecast_horizon_weeks": 4,
+  "encoder_history_weeks": 52,
+  "validation_forecast_windows": 250,
+  "auction_price_inputs_in_model": false,
+  "static_feature_importance": [
+    {
+      "feature": "grade",
+      "relative_importance_percent": 52.91289304716002
+    },
+    {
+      "feature": "demand_kg_scale",
+      "relative_importance_percent": 40.06164123817327
+    },
+    {
+      "feature": "demand_kg_center",
+      "relative_importance_percent": 7.025465714666704
+    }
+  ],
+  "encoder_feature_importance": [
+    {
+      "feature": "relative_time_idx",
+      "relative_importance_percent": 22.047062704131186
+    },
+    {
+      "feature": "month_sin",
+      "relative_importance_percent": 20.73312685082734
+    },
+    {
+      "feature": "week_cos",
+      "relative_importance_percent": 18.304757707886466
+    },
+    {
+      "feature": "week_sin",
+      "relative_importance_percent": 12.074681865763361
+    },
+    {
+      "feature": "production_kg",
+      "relative_importance_percent": 9.456747445542094
+    },
+    {
+      "feature": "demand_kg",
+      "relative_importance_percent": 6.231278997641829
+    },
+    {
+      "feature": "inventory_kg",
+      "relative_importance_percent": 5.024827580475643
+    },
+    {
+      "feature": "month_cos",
+      "relative_importance_percent": 4.981811146718798
+    },
+    {
+      "feature": "time_idx",
+      "relative_importance_percent": 1.1457057010132845
+    }
+  ],
+  "decoder_feature_importance": [
+    {
+      "feature": "time_idx",
+      "relative_importance_percent": 36.752364761806824
+    },
+    {
+      "feature": "week_sin",
+      "relative_importance_percent": 20.99037760743735
+    },
+    {
+      "feature": "week_cos",
+      "relative_importance_percent": 18.569570745758334
+    },
+    {
+      "feature": "month_cos",
+      "relative_importance_percent": 12.482299685647014
+    },
+    {
+      "feature": "relative_time_idx",
+      "relative_importance_percent": 9.409821992780476
+    },
+    {
+      "feature": "month_sin",
+      "relative_importance_percent": 1.7955652065700034
+    }
+  ],
+  "top_historical_attention_positions": [
+    {
+      "weeks_before_latest_observation": 51,
+      "relative_attention_percent": 5.736154675766524
+    },
+    {
+      "weeks_before_latest_observation": 50,
+      "relative_attention_percent": 4.6520071454313765
+    },
+    {
+      "weeks_before_latest_observation": 49,
+      "relative_attention_percent": 4.094381929728313
+    },
+    {
+      "weeks_before_latest_observation": 48,
+      "relative_attention_percent": 3.268241041337869
+    },
+    {
+      "weeks_before_latest_observation": 47,
+      "relative_attention_percent": 2.3645708267235217
+    },
+    {
+      "weeks_before_latest_observation": 24,
+      "relative_attention_percent": 2.054114779249253
+    },
+    {
+      "weeks_before_latest_observation": 25,
+      "relative_attention_percent": 2.05069073264334
+    },
+    {
+      "weeks_before_latest_observation": 23,
+      "relative_attention_percent": 2.0495112370879163
+    },
+    {
+      "weeks_before_latest_observation": 26,
+      "relative_attention_percent": 2.0433251796252616
+    },
+    {
+      "weeks_before_latest_observation": 32,
+      "relative_attention_percent": 2.042536878342829
+    }
+  ],
+  "output_files": {
+    "static": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\static_feature_importance.csv",
+    "encoder": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\encoder_feature_importance.csv",
+    "decoder": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\decoder_feature_importance.csv",
+    "attention": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_explainability\\historical_attention.csv"
+  },
+  "limitations": [
+    "Importance values describe the TFT variable-selection network, not causal feature effects.",
+    "Static, encoder and decoder importance percentages are normalized within their own groups and should not be compared directly between groups.",
+    "TFT attention is an internal temporal weighting mechanism, not a causal explanation.",
+    "Attention is aggregated over the 2024 validation windows.",
+    "No-price TFT does not use auction-price inputs.",
+    "This analysis does not change the frozen test evaluation."
+  ],
+  "generated_at_utc": "2026-10-16T03:15:10.461083+00:00"
+}

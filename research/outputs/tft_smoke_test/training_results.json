@@ -1,0 +1,62 @@
+{
+  "experiment": "tft_smoke_test",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-16T01:26:05.851138+00:00",
+  "model": "TemporalFusionTransformer",
+  "target": "demand_kg",
+  "target_definition": "Total customer orders including unfulfilled demand",
+  "grades": [
+    "BOP",
+    "BOPF",
+    "Dust",
+    "OP",
+    "Pekoe"
+  ],
+  "encoder_length": 52,
+  "prediction_length": 4,
+  "seed": 42,
+  "hardware": "cpu",
+  "configuration": {
+    "hidden_size": 16,
+    "attention_heads": 2,
+    "hidden_continuous_size": 8,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "max_epochs": 3,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "limit_train_batches": 20,
+    "limit_val_batches": 10
+  },
+  "dataset_windows": {
+    "train": 4680,
+    "validation": 250,
+    "test_reserved": 445
+  },
+  "model_parameters": 27819,
+  "epochs_completed": 3,
+  "best_validation_loss": 807.8617553710938,
+  "best_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_smoke_test\\checkpoints\\tft-smoke-02-807.8618.ckpt",
+  "metrics": {
+    "train_loss": 685.9395751953125,
+    "train_loss_step": 511.26641845703125,
+    "val_loss": 807.8617553710938,
+    "val_SMAPE": 0.10009352117776871,
+    "val_MAE": 1173.908447265625,
+    "val_RMSE": 1592.2449951171875,
+    "val_MAPE": 0.09419001638889313,
+    "train_loss_epoch": 685.9395751953125
+  },
+  "notes": [
+    "Training uses only the training dataset.",
+    "Validation uses the 2024 partition.",
+    "The test partition is not evaluated.",
+    "The smoke test uses limited batches.",
+    "Results must not be reported as final forecasting accuracy.",
+    "Auction prices are historical quotation-derived proxies."
+  ]
+}

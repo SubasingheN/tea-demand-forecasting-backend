@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="686.0425pt" height="300.2295pt" viewBox="0 0 686.0425 300.2295" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-16T08:52:14.531754</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 300.2295
+L 686.0425 300.2295
+L 686.0425 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 158.4 246.1575
+L 672.48 246.1575
+L 672.48 73.7895
+L 158.4 73.7895
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 158.4 246.1575
+L 158.4 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="158.4" y="261.755156" transform="rotate(-0 158.4 261.755156)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 231.84 246.1575
+L 231.84 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="231.84" y="261.755156" transform="rotate(-0 231.84 261.755156)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 305.28 246.1575
+L 305.28 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="305.28" y="261.755156" transform="rotate(-0 305.28 261.755156)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 378.72 246.1575
+L 378.72 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="378.72" y="261.755156" transform="rotate(-0 378.72 261.755156)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 452.16 246.1575
+L 452.16 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="452.16" y="261.755156" transform="rotate(-0 452.16 261.755156)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 525.6 246.1575
+L 525.6 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="525.6" y="261.755156" transform="rotate(-0 525.6 261.755156)">50</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 599.04 246.1575
+L 599.04 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="599.04" y="261.755156" transform="rotate(-0 599.04 261.755156)">60</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 672.48 246.1575
+L 672.48 73.7895
+" clip-path="url(#pa470501bb8)" style="fill: none; stroke: #e1e8ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="672.48" y="261.755156" transform="rotate(-0 672.48 261.755156)">70</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263746" x="415.44" y="280.755937" transform="rotate(-0 415.44 280.755937)">Relative importance within feature group (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_17"/>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #263746" x="150.4" y="103.964252" transform="rotate(-0 150.4 103.964252)">Tea grade</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_18"/>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #263746" x="150.4" y="163.772719" transform="rotate(-0 150.4 163.772719)">Demand scale</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_19"/>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #263746" x="150.4" y="223.581185" transform="rotate(-0 150.4 223.581185)">Demand center</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 158.4 81.624409
+L 546.992287 81.624409
+L 546.992287 118.705658
+L 158.4 118.705658
+z
+" clip-path="url(#pa470501bb8)" style="fill: #268780; stroke: #268780; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 158.4 141.432875
+L 452.612693 141.432875
+L 452.612693 178.514125
+L 158.4 178.514125
+z
+" clip-path="url(#pa470501bb8)" style="fill: #367da8"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 158.4 201.241342
+L 209.99502 201.241342
+L 209.99502 238.322591
+L 158.4 238.322591
+z
+" clip-path="url(#pa470501bb8)" style="fill: #367da8"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="553.161247" y="102.502924" transform="rotate(-0 553.161247 102.502924)">52.91%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="458.781653" y="162.311391" transform="rotate(-0 458.781653 162.311391)">40.06%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="216.16398" y="222.119857" transform="rotate(-0 216.16398 222.119857)">7.03%</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="7.2" y="19.3575" transform="rotate(-0 7.2 19.3575)">Static Feature Importance</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6f7a" x="7.2" y="39.0135" transform="rotate(-0 7.2 39.0135)">Selected no-price TFT | 2024 validation</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5e6f7a" x="7.2" y="291.107625" transform="rotate(-0 7.2 291.107625)">Source: TFT variable-selection interpretation. Percentages are normalized within this feature group and are not causal effects.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa470501bb8">
+   <rect x="158.4" y="73.7895" width="514.08" height="172.368"/>
+  </clipPath>
+ </defs>
+</svg>

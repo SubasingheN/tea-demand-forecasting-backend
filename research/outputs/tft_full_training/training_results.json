@@ -1,0 +1,98 @@
+{
+  "experiment": "tft_full_training",
+  "status": "PASS",
+  "model": "TemporalFusionTransformer",
+  "started_at_utc": "2026-10-16T01:28:24.312234+00:00",
+  "finished_at_utc": "2026-10-16T01:35:59.486521+00:00",
+  "seed": 42,
+  "hardware": "CPU",
+  "target": "demand_kg",
+  "target_definition": "Total customer orders including unfulfilled orders",
+  "grades": [
+    "BOP",
+    "BOPF",
+    "Dust",
+    "OP",
+    "Pekoe"
+  ],
+  "encoder_length": 52,
+  "forecast_horizon": 4,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "model_settings": {
+    "hidden_size": 16,
+    "attention_heads": 2,
+    "hidden_continuous_size": 8,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 30,
+    "early_stopping_patience": 5,
+    "gradient_clip_val": 0.1
+  },
+  "epochs_completed": 15,
+  "best_validation_quantile_loss": 496.3011169433594,
+  "best_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_full_training\\checkpoints\\tft-epoch09-val496.3011.ckpt",
+  "last_checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_full_training\\checkpoints\\last.ckpt",
+  "training_log_directory": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_full_training\\logs\\tft_training\\version_0",
+  "dataset_windows": {
+    "train": 4680,
+    "validation": 250,
+    "test_reserved": 445
+  },
+  "dataset_alignment": {
+    "train": {
+      "expected_windows": 4680,
+      "actual_windows": 4680,
+      "manifest_alignment": "PASS"
+    },
+    "validation": {
+      "expected_windows": 250,
+      "actual_windows": 250,
+      "manifest_alignment": "PASS"
+    },
+    "test": {
+      "expected_windows": 445,
+      "actual_windows": 445,
+      "manifest_alignment": "PASS"
+    }
+  },
+  "known_future_features": [
+    "time_idx",
+    "week_sin",
+    "week_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "historical_only_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg",
+    "auction_price_high_lkr_per_kg_input",
+    "auction_price_medium_lkr_per_kg_input",
+    "auction_price_high_lkr_per_kg_available",
+    "auction_price_medium_lkr_per_kg_available"
+  ],
+  "model_parameters": 27819,
+  "callback_metrics": {
+    "train_loss": 433.5356750488281,
+    "train_loss_step": 374.55462646484375,
+    "val_loss": 511.9106140136719,
+    "val_SMAPE": 0.06578030437231064,
+    "val_MAE": 775.8007202148438,
+    "val_RMSE": 992.0040283203125,
+    "val_MAPE": 0.06535740941762924,
+    "train_loss_epoch": 433.5356750488281
+  },
+  "research_notes": [
+    "Only training data was used to fit TFT parameters.",
+    "2024 validation data was used for checkpoint selection.",
+    "The 2025-2026 test partition was not evaluated during training.",
+    "High and Medium auction prices are historical quotation-derived proxies and remain source candidates.",
+    "No future actual production, inventory, demand or auction prices are configured as known-future inputs.",
+    "Quantile loss is not directly equivalent to MAE or RMSE."
+  ]
+}

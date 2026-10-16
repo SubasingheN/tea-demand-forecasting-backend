@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "partition": "2024_validation",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_full_training\\checkpoints\\tft-epoch09-val496.3011.ckpt",
+  "target": "demand_kg",
+  "target_definition": "Total customer orders including unfulfilled orders",
+  "forecast_horizon": 4,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "forecast_windows": 250,
+  "prediction_rows": 1000,
+  "quantile_crossing_observations": 0,
+  "overall_metrics": {
+    "observations": 1000,
+    "tft_mae_kg": 771.6820224609374,
+    "tft_rmse_kg": 1052.8324206704424,
+    "tft_wape_percent": 6.040394503707352,
+    "baseline_mae_kg": 1055.17,
+    "baseline_rmse_kg": 1570.605378190206,
+    "baseline_wape_percent": 8.259416291895695,
+    "tft_mae_improvement_percent": 26.866569134742516,
+    "interval_80_coverage_percent": 88.8
+  },
+  "grade_metrics": [
+    {
+      "grade": "BOP",
+      "observations": 200,
+      "tft_mae_kg": 886.0540283203125,
+      "tft_rmse_kg": 1126.3310685206436,
+      "tft_wape_percent": 5.511703589948737,
+      "baseline_mae_kg": 1304.105,
+      "baseline_rmse_kg": 1735.6438589180673,
+      "baseline_wape_percent": 8.11219178563642,
+      "tft_mae_improvement_percent": 32.056542355077816,
+      "interval_80_coverage_percent": 83.0
+    },
+    {
+      "grade": "BOPF",
+      "observations": 200,
+      "tft_mae_kg": 612.948203125,
+      "tft_rmse_kg": 779.5861648202552,
+      "tft_wape_percent": 4.496138371915612,
+      "baseline_mae_kg": 980.92,
+      "baseline_rmse_kg": 1319.3272869155705,
+      "baseline_wape_percent": 7.195309537240047,
+      "tft_mae_improvement_percent": 37.51292632171839,
+      "interval_80_coverage_percent": 96.0
+    },
+    {
+      "grade": "Dust",
+      "observations": 200,
+      "tft_mae_kg": 1458.789638671875,
+      "tft_rmse_kg": 1716.4454717172225,
+      "tft_wape_percent": 6.681070236792564,
+      "baseline_mae_kg": 1850.19,
+      "baseline_rmse_kg": 2519.68611537231,
+      "baseline_wape_percent": 8.473633904244947,
+      "tft_mae_improvement_percent": 21.154603653036986,
+      "interval_80_coverage_percent": 91.0
+    },
+    {
+      "grade": "OP",
+      "observations": 200,
+      "tft_mae_kg": 601.846982421875,
+      "tft_rmse_kg": 771.0644440646994,
+      "tft_wape_percent": 6.726892306836294,
+      "baseline_mae_kg": 839.24,
+      "baseline_rmse_kg": 1047.6462141391053,
+      "baseline_wape_percent": 9.380253227940914,
+      "tft_mae_improvement_percent": 28.286666219213213,
+      "interval_80_coverage_percent": 88.5
+    },
+    {
+      "grade": "Pekoe",
+      "observations": 200,
+      "tft_mae_kg": 298.771259765625,
+      "tft_rmse_kg": 353.80620613627616,
+      "tft_wape_percent": 8.822146656182962,
+      "baseline_mae_kg": 301.395,
+      "baseline_rmse_kg": 366.79894356445465,
+      "baseline_wape_percent": 8.899620711597603,
+      "tft_mae_improvement_percent": 0.8705321038421221,
+      "interval_80_coverage_percent": 85.5
+    }
+  ],
+  "horizon_metrics": [
+    {
+      "horizon": 1,
+      "observations": 250,
+      "tft_mae_kg": 766.573001953125,
+      "tft_rmse_kg": 1043.156356355475,
+      "tft_wape_percent": 6.019239331320502,
+      "baseline_mae_kg": 859.304,
+      "baseline_rmse_kg": 1287.802736446852,
+      "baseline_wape_percent": 6.747376207070382,
+      "tft_mae_improvement_percent": 10.791407702847305,
+      "interval_80_coverage_percent": 88.4
+    },
+    {
+      "horizon": 2,
+      "observations": 250,
+      "tft_mae_kg": 765.95158984375,
+      "tft_rmse_kg": 1047.7179039108692,
+      "tft_wape_percent": 6.001666075685244,
+      "baseline_mae_kg": 965.456,
+      "baseline_rmse_kg": 1438.8007617456976,
+      "baseline_wape_percent": 7.56489652818501,
+      "tft_mae_improvement_percent": 20.664267471148353,
+      "interval_80_coverage_percent": 89.60000000000001
+    },
+    {
+      "horizon": 3,
+      "observations": 250,
+      "tft_mae_kg": 777.40983984375,
+      "tft_rmse_kg": 1063.1789999009698,
+      "tft_wape_percent": 6.079312518093428,
+      "baseline_mae_kg": 1102.828,
+      "baseline_rmse_kg": 1646.4087426881576,
+      "baseline_wape_percent": 8.624068955766562,
+      "tft_mae_improvement_percent": 29.507607728154348,
+      "interval_80_coverage_percent": 88.4
+    },
+    {
+      "horizon": 4,
+      "observations": 250,
+      "tft_mae_kg": 776.793658203125,
+      "tft_rmse_kg": 1057.1598026071988,
+      "tft_wape_percent": 6.061150534077903,
+      "baseline_mae_kg": 1293.092,
+      "baseline_rmse_kg": 1851.4750195452275,
+      "baseline_wape_percent": 10.089713250931808,
+      "tft_mae_improvement_percent": 39.92742525642994,
+      "interval_80_coverage_percent": 88.8
+    }
+  ],
+  "test_partition_evaluated": false,
+  "timestamp_utc": "2026-10-16T01:43:09.282864+00:00",
+  "limitations": [
+    "Validation windows overlap and are not statistically independent.",
+    "The naive baseline repeats the last observed demand for all four weeks.",
+    "Forecast accuracy alone does not establish an auction-price effect.",
+    "Auction prices are quotation-based historical candidate indicators.",
+    "Test data was not evaluated."
+  ]
+}

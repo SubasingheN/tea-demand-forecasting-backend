@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "model": "no_price_tft",
+  "forecast_type": "dataset_origin_forecast",
+  "forecast_origin": "2026-10-05",
+  "target": "demand_kg",
+  "unit": "kg",
+  "encoder_weeks": 52,
+  "forecast_horizon_weeks": 4,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "nominal_interval_coverage_percent": 80,
+  "forecast_count": 20,
+  "forecasts": {
+    "BOP": [
+      {
+        "week": "2026-10-12",
+        "horizon": 1,
+        "lower_demand_kg": 13133.330078125,
+        "median_demand_kg": 16090.423828125,
+        "upper_demand_kg": 17474.103515625
+      },
+      {
+        "week": "2026-10-19",
+        "horizon": 2,
+        "lower_demand_kg": 12906.6396484375,
+        "median_demand_kg": 16068.7900390625,
+        "upper_demand_kg": 17526.3828125
+      },
+      {
+        "week": "2026-10-26",
+        "horizon": 3,
+        "lower_demand_kg": 12917.4140625,
+        "median_demand_kg": 16117.125,
+        "upper_demand_kg": 17644.23046875
+      },
+      {
+        "week": "2026-11-02",
+        "horizon": 4,
+        "lower_demand_kg": 12760.642578125,
+        "median_demand_kg": 16302.125,
+        "upper_demand_kg": 17919.5859375
+      }
+    ],
+    "BOPF": [
+      {
+        "week": "2026-10-12",
+        "horizon": 1,
+        "lower_demand_kg": 11487.80078125,
+        "median_demand_kg": 13142.0703125,
+        "upper_demand_kg": 14347.341796875
+      },
+      {
+        "week": "2026-10-19",
+        "horizon": 2,
+        "lower_demand_kg": 11470.9677734375,
+        "median_demand_kg": 13227.431640625,
+        "upper_demand_kg": 14514.3955078125
+      },
+      {
+        "week": "2026-10-26",
+        "horizon": 3,
+        "lower_demand_kg": 11477.7822265625,
+        "median_demand_kg": 13370.6142578125,
+        "upper_demand_kg": 14717.072265625
+      },
+      {
+        "week": "2026-11-02",
+        "horizon": 4,
+        "lower_demand_kg": 11403.4267578125,
+        "median_demand_kg": 13598.4052734375,
+        "upper_demand_kg": 15025.197265625
+      }
+    ],
+    "Dust": [
+      {
+        "week": "2026-10-12",
+        "horizon": 1,
+        "lower_demand_kg": 18019.333984375,
+        "median_demand_kg": 22813.822265625,
+        "upper_demand_kg": 25404.87109375
+      },
+      {
+        "week": "2026-10-19",
+        "horizon": 2,
+        "lower_demand_kg": 17784.291015625,
+        "median_demand_kg": 22675.701171875,
+        "upper_demand_kg": 25321.162109375
+      },
+      {
+        "week": "2026-10-26",
+        "horizon": 3,
+        "lower_demand_kg": 17947.361328125,
+        "median_demand_kg": 22691.89453125,
+        "upper_demand_kg": 25388.00390625
+      },
+      {
+        "week": "2026-11-02",
+        "horizon": 4,
+        "lower_demand_kg": 18140.98046875,
+        "median_demand_kg": 22945.62109375,
+        "upper_demand_kg": 25726.9296875
+      }
+    ],
+    "OP": [
+      {
+        "week": "2026-10-12",
+        "horizon": 1,
+        "lower_demand_kg": 6277.11865234375,
+        "median_demand_kg": 8874.2060546875,
+        "upper_demand_kg": 10157.3359375
+      },
+      {
+        "week": "2026-10-19",
+        "horizon": 2,
+        "lower_demand_kg": 6061.1953125,
+        "median_demand_kg": 8848.44140625,
+        "upper_demand_kg": 10176.306640625
+      },
+      {
+        "week": "2026-10-26",
+        "horizon": 3,
+        "lower_demand_kg": 6094.494140625,
+        "median_demand_kg": 8885.3623046875,
+        "upper_demand_kg": 10258.85546875
+      },
+      {
+        "week": "2026-11-02",
+        "horizon": 4,
+        "lower_demand_kg": 6135.642578125,
+        "median_demand_kg": 9039.1201171875,
+        "upper_demand_kg": 10465.283203125
+      }
+    ],
+    "Pekoe": [
+      {
+        "week": "2026-10-12",
+        "horizon": 1,
+        "lower_demand_kg": 2515.6123046875,
+        "median_demand_kg": 3087.918701171875,
+        "upper_demand_kg": 3515.058837890625
+      },
+      {
+        "week": "2026-10-19",
+        "horizon": 2,
+        "lower_demand_kg": 2525.68701171875,
+        "median_demand_kg": 3105.742919921875,
+        "upper_demand_kg": 3554.206298828125
+      },
+      {
+        "week": "2026-10-26",
+        "horizon": 3,
+        "lower_demand_kg": 2544.927490234375,
+        "median_demand_kg": 3151.615966796875,
+        "upper_demand_kg": 3613.98583984375
+      },
+      {
+        "week": "2026-11-02",
+        "horizon": 4,
+        "lower_demand_kg": 2551.64599609375,
+        "median_demand_kg": 3233.573974609375,
+        "upper_demand_kg": 3717.43359375
+      }
+    ]
+  },
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_no_price\\checkpoints\\tft-no-price-epoch09-val470.2676.ckpt",
+  "generated_at_utc": "2026-10-16T03:34:45.223376+00:00",
+  "notes": [
+    "Forecast origin is the latest week available in the factory dataset.",
+    "Forecasts are not automatically updated with live factory data.",
+    "Future demand, production and inventory are not decoder inputs.",
+    "Median predictions represent P50.",
+    "Intervals are model-estimated P10 to P90 uncertainty ranges."
+  ]
+}

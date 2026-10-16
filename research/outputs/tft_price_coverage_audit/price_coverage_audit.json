@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "encoder_length": 52,
+  "forecast_horizon": 4,
+  "target": "demand_kg",
+  "coverage_definition": "Auction-price availability across the 52 weeks preceding each forecast.",
+  "window_counts": {
+    "train": 4680,
+    "validation": 250
+  },
+  "validation_windows_without_any_price": 100,
+  "validation_windows_with_price_at_origin": 138,
+  "comparison_groups": [
+    {
+      "coverage_group": "high_39_to_52",
+      "forecast_windows": 150,
+      "prediction_rows": 600,
+      "average_encoder_price_weeks": 46.38,
+      "with_price_mae_kg": 700.2830712890625,
+      "no_price_mae_kg": 650.6707088216145,
+      "price_mae_benefit_kg": -49.61236246744795,
+      "price_mae_benefit_percent": -7.624803421272416
+    },
+    {
+      "coverage_group": "none",
+      "forecast_windows": 100,
+      "prediction_rows": 400,
+      "average_encoder_price_weeks": 0.0,
+      "with_price_mae_kg": 878.78044921875,
+      "no_price_mae_kg": 801.121201171875,
+      "price_mae_benefit_kg": -77.65924804687506,
+      "price_mae_benefit_percent": -9.693820102785397
+    }
+  ],
+  "outputs": {
+    "windows": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_price_coverage_audit\\price_coverage_by_window.csv",
+    "grade_summary": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_price_coverage_audit\\price_coverage_by_grade.csv",
+    "performance": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_price_coverage_audit\\price_coverage_vs_validation_error.csv"
+  },
+  "test_partition_evaluated": false,
+  "limitations": [
+    "Price coverage does not independently verify quotation accuracy.",
+    "Auction-price availability differs by tea grade and calendar period.",
+    "Rolling forecast windows overlap.",
+    "Observed subgroup differences do not establish causality.",
+    "No test forecasts were generated."
+  ],
+  "timestamp_utc": "2026-10-16T03:07:43.008281+00:00"
+}
