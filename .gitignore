@@ -56,6 +56,9 @@ desktop.ini
 ~$*
 lightning_logs/
 
+# Temporary inspection reports
+*_inspection.txt
+
 # ==================================================
 # PRIVATE / EXTERNAL DATASETS
 # ==================================================
@@ -65,6 +68,10 @@ data/processed/
 data/validated/
 
 data/tea_inventory_tft_dataset new.csv
+
+# Six-input factory datasets
+data/finalized_tft_weekly_tea_demand_model_data_extended_to_2026-10-05.csv
+tea_six_input_2025_2026_continuation.csv
 
 # ==================================================
 # TEMPORARY RESEARCH REVIEW PACKAGES
@@ -89,10 +96,23 @@ data/forecast_history.json
 *.db
 
 # ==================================================
+# SIX-INPUT TFT TRAINING LOGS
+# ==================================================
+
+research/outputs/tft_six_input/training_logs/
+
+# ==================================================
 # IMPORTANT: KEEP RESEARCH ARTIFACTS
 # ==================================================
 
 # Do not ignore research/.
-# Research scripts, selected checkpoints,
-# saved test metrics, forecasts and explanation
+# Research scripts and selected evaluation
 # results are required for reproducibility.
+#
+# The six-input TFT checkpoint is not ignored,
+# but review it before publishing.
+#
+# Private factory datasets are intentionally
+# excluded from version control.
+# A separate authorized dataset distribution
+# method is required for reproducibility.

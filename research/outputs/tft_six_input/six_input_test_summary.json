@@ -1,0 +1,51 @@
+{
+  "model": "six_input_tft",
+  "evaluation": "held_out_test",
+  "evaluated_at_utc": "2026-10-16T11:52:28.637029+00:00",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_six_input\\checkpoints\\six-input-epoch08-val303.8794.ckpt",
+  "test_windows": 255,
+  "prediction_rows": 1020,
+  "test_start": "2024-01-01",
+  "overall_metrics": [
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "six_input_tft",
+      "sample_count": 1020,
+      "mae_kg": 573.8858,
+      "rmse_kg": 832.9331,
+      "smape_percent": 14.0567,
+      "interval_coverage_percent": 67.7451,
+      "mean_interval_width_kg": 1523.1019
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "last_observed",
+      "sample_count": 1020,
+      "mae_kg": 589.5029,
+      "rmse_kg": 895.5568,
+      "smape_percent": 13.9908,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "seasonal_52w",
+      "sample_count": 1020,
+      "mae_kg": 545.3216,
+      "rmse_kg": 816.1498,
+      "smape_percent": 13.4758,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    }
+  ],
+  "notes": [
+    "Test targets were not used for training.",
+    "Baselines use encoder observations only.",
+    "Overlapping windows are evaluated separately.",
+    "Results must not be interpreted as independent samples.",
+    "No retraining was performed."
+  ]
+}
