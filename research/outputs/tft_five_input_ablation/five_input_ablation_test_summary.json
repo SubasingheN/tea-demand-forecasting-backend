@@ -1,0 +1,69 @@
+{
+  "model": "five_input_ablation_tft",
+  "evaluation": "held_out_test",
+  "evaluated_at_utc": "2026-10-17T05:42:34.690022+00:00",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_five_input_ablation\\checkpoints\\five-input-ablation-epoch13-val242.5374.ckpt",
+  "test_windows": 710,
+  "prediction_rows": 2840,
+  "test_start": "2024-01-01",
+  "overall_metrics": [
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "five_input_ablation_tft",
+      "sample_count": 2840,
+      "mae_kg": 548.8077,
+      "rmse_kg": 822.9982,
+      "smape_percent": 13.2265,
+      "interval_coverage_percent": 63.4155,
+      "mean_interval_width_kg": 1293.6608
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "last_observed",
+      "sample_count": 2840,
+      "mae_kg": 586.4996,
+      "rmse_kg": 884.173,
+      "smape_percent": 13.7147,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "seasonal_52w",
+      "sample_count": 2840,
+      "mae_kg": 559.8018,
+      "rmse_kg": 861.6533,
+      "smape_percent": 13.3903,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    }
+  ],
+  "historical_only_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg",
+    "usd_lkr_rate",
+    "festival_flag"
+  ],
+  "excluded_auction_features": [
+    "colombo_auction_price_lkr",
+    "auction_price_high_lkr",
+    "auction_price_medium_lkr",
+    "auction_price_low_lkr"
+  ],
+  "auction_features_used_by_model": false,
+  "dataset_approval_status": "provisional",
+  "notes": [
+    "Evaluation uses the frozen ablation checkpoint.",
+    "No model retraining was performed.",
+    "Test data was held out during training.",
+    "Seasonal and last-observed baselines use encoder history only.",
+    "Overlapping test windows are scored separately.",
+    "Overlapping forecasts are not independent observations.",
+    "Compare with eight-input TFT using matched grade, target date and horizon.",
+    "The source dataset retains unresolved auction audit flags."
+  ]
+}

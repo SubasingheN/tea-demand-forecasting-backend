@@ -1,0 +1,95 @@
+{
+  "model": "nine_input_tft",
+  "model_version": "production_v1",
+  "status": "trained_not_deployed",
+  "created_at_utc": "2026-10-19T08:27:03.886702+00:00",
+  "selection": {
+    "configuration": "candidate_b",
+    "selection_metric": "validation_mae_kg",
+    "selected_validation_mae_kg": 384.77,
+    "validation_interval_coverage_percent": 73.9796
+  },
+  "dataset": {
+    "path": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\data\\processed\\tft_eight_input_model_ready_ranges_2021_2026.csv",
+    "sha256": "d04b55a96eda722120d986185dfe0b385fbe13d3a4dc5a6ca8cfa1d207f7e4dd",
+    "records": 1500,
+    "reporting_weeks": 300,
+    "first_week": "2021-01-11",
+    "last_week": "2026-10-05",
+    "tea_grades": [
+      "BOP",
+      "BOPF",
+      "Dust",
+      "OP",
+      "Pekoe"
+    ],
+    "all_available_data_used_for_training": true
+  },
+  "architecture": {
+    "type": "TemporalFusionTransformer",
+    "hidden_size": 32,
+    "hidden_continuous_size": 16,
+    "attention_heads": 4,
+    "dropout": 0.2,
+    "parameter_count": 102719
+  },
+  "training": {
+    "epochs": 14,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "random_seed": 42,
+    "training_windows": 1225,
+    "selection_policy": "fixed_epochs",
+    "held_out_test_used": false
+  },
+  "forecasting": {
+    "encoder_weeks": 52,
+    "forecast_weeks": 4,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "target": "demand_kg",
+    "target_unit": "kg",
+    "group_ids": [
+      "grade"
+    ],
+    "historical_only_features": [
+      "demand_kg",
+      "production_kg",
+      "inventory_kg",
+      "usd_lkr_monday_rate",
+      "usd_lkr_sunday_rate",
+      "festival_flag",
+      "auction_price_high_lkr",
+      "auction_price_medium_lkr",
+      "auction_price_low_lkr"
+    ],
+    "known_future_features": [
+      "time_idx",
+      "week_sin",
+      "week_cos",
+      "month_sin",
+      "month_cos"
+    ]
+  },
+  "artifacts": {
+    "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\production\\checkpoints\\nine_input_tft_production.ckpt",
+    "dataset_parameters": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\production\\dataset_parameters.pt",
+    "training_logs": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\production\\training_logs\\version_0"
+  },
+  "deployment": {
+    "backend_integrated": false,
+    "frontend_integrated": false,
+    "historical_forecasts_initialized": false
+  },
+  "notes": [
+    "Production preprocessing is fitted on the complete approved dataset.",
+    "This checkpoint is trained on all available historical observations.",
+    "The final checkpoint is not an independent test evaluation.",
+    "Historical backfilled forecasts using this model must be labelled as backfilled.",
+    "Weekly Data Entry remains restricted to the latest completed reporting week.",
+    "The existing factory checkpoint remains unchanged until deployment."
+  ]
+}

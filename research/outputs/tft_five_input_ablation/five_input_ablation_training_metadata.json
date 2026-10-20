@@ -1,0 +1,131 @@
+{
+  "model": "five_input_ablation_tft",
+  "status": "trained",
+  "created_at_utc": "2026-10-17T05:36:23.683862+00:00",
+  "experiment": "auction_price_feature_ablation",
+  "dataset": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\data\\processed\\tft_eight_input_cleaned.csv",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_five_input_ablation\\checkpoints\\five-input-ablation-epoch13-val242.5374.ckpt",
+  "best_validation_quantile_loss": 242.53744506835938,
+  "training_epochs_reported": 19,
+  "model_parameters": 26663,
+  "architecture": {
+    "model": "TemporalFusionTransformer",
+    "hidden_size": 16,
+    "attention_heads": 4,
+    "hidden_continuous_size": 8,
+    "dropout": 0.1,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 30,
+    "encoder_weeks": 52,
+    "forecast_weeks": 4,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "seed": 42
+  },
+  "data_split": {
+    "validation_start": "2023-01-02",
+    "test_start": "2024-01-01",
+    "window_counts": {
+      "training": 240,
+      "validation": 245,
+      "testing": 710
+    },
+    "windows_by_grade": {
+      "BOP": {
+        "training": 48,
+        "validation": 49,
+        "testing": 142
+      },
+      "BOPF": {
+        "training": 48,
+        "validation": 49,
+        "testing": 142
+      },
+      "Dust": {
+        "training": 48,
+        "validation": 49,
+        "testing": 142
+      },
+      "OP": {
+        "training": 48,
+        "validation": 49,
+        "testing": 142
+      },
+      "Pekoe": {
+        "training": 48,
+        "validation": 49,
+        "testing": 142
+      }
+    },
+    "known_future_features": [
+      "month_cos",
+      "month_sin",
+      "time_idx",
+      "week_cos",
+      "week_sin"
+    ],
+    "historical_only_features": [
+      "demand_kg",
+      "festival_flag",
+      "inventory_kg",
+      "production_kg",
+      "usd_lkr_rate"
+    ],
+    "excluded_auction_features": [
+      "auction_price_high_lkr",
+      "auction_price_low_lkr",
+      "auction_price_medium_lkr",
+      "colombo_auction_price_lkr"
+    ],
+    "auction_features_in_model": [],
+    "source_dataset": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\data\\processed\\tft_eight_input_cleaned.csv",
+    "source_approval_status": "provisional",
+    "auction_publication_timestamps_verified": false
+  },
+  "known_future_features": [
+    "time_idx",
+    "week_sin",
+    "week_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "historical_only_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg",
+    "usd_lkr_rate",
+    "festival_flag"
+  ],
+  "excluded_auction_features": [
+    "colombo_auction_price_lkr",
+    "auction_price_high_lkr",
+    "auction_price_medium_lkr",
+    "auction_price_low_lkr"
+  ],
+  "auction_features_used_by_model": false,
+  "auction_source_audit_status": {
+    "AVAILABLE_SOURCE": 1440,
+    "REVIEW_FLAGGED_SOURCE": 60
+  },
+  "auction_publication_timestamp_verified": false,
+  "dataset_approval_status": "provisional",
+  "test_evaluated": false,
+  "test_metrics": null,
+  "training_log_directory": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_five_input_ablation\\training_logs\\version_0",
+  "notes": [
+    "Uses the same prepared Version 2 observations.",
+    "Only five historical model inputs are supplied.",
+    "Auction prices are excluded from model inputs.",
+    "Chronological training and validation splits.",
+    "Normalization is fitted on training data.",
+    "Best checkpoint is selected using validation loss.",
+    "Held-out test data is not evaluated during training.",
+    "The Version 2 dataset retains source audit limitations.",
+    "Six-input and eight-input checkpoints are unchanged."
+  ]
+}

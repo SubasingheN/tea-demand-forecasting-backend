@@ -1,0 +1,3 @@
+name,checkpoint,hidden_size,hidden_continuous_size,attention_head_size,dropout,validation_quantile_loss,validation_forecast_count,validation_mae_kg,validation_rmse_kg,validation_wape_percent,validation_interval_coverage_percent,validation_raw_crossing_percent
+candidate_a,C:\Users\nuwan\Tea Demand Forecasting Research New\tea-demand-forecasting-backend\research\outputs\tft_nine_input\optimization\candidate_a\checkpoints\best-06-266.7152.ckpt,24,12,4,0.15,266.7152099609375,980,423.8745,622.5092,11.458,73.9796,0.0
+candidate_b,C:\Users\nuwan\Tea Demand Forecasting Research New\tea-demand-forecasting-backend\research\outputs\tft_nine_input\optimization\candidate_b\checkpoints\best-13-251.4402.ckpt,32,16,4,0.2,251.440185546875,980,384.77,554.0724,10.401,73.9796,0.0

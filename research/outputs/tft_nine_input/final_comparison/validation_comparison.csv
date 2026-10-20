@@ -1,0 +1,5 @@
+model,samples,mae_kg,rmse_kg,wape_percent,interval_coverage_percent,crossing_percent
+candidate_b,980,384.77,554.0723,10.401,73.9796,0.0
+original_tft,980,409.2227,594.1516,11.0619,69.898,0.0
+candidate_a,980,423.8745,622.5092,11.458,73.9796,0.0
+seasonal_52w,980,499.5163,774.6295,13.5027,,

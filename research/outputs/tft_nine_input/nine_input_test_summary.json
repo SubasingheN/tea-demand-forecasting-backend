@@ -1,0 +1,144 @@
+{
+  "model": "nine_input_tft",
+  "evaluation": "held_out_test",
+  "evaluated_at_utc": "2026-10-18T16:53:08.417967+00:00",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\checkpoints\\nine-input-epoch21-val265.7375.ckpt",
+  "test_start": "2024-01-01",
+  "test_windows": 710,
+  "prediction_rows": 2840,
+  "encoder_weeks": 52,
+  "forecast_horizon_weeks": 4,
+  "historical_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg",
+    "usd_lkr_monday_rate",
+    "usd_lkr_sunday_rate",
+    "festival_flag",
+    "auction_price_high_lkr",
+    "auction_price_medium_lkr",
+    "auction_price_low_lkr"
+  ],
+  "quantile_rearrangement": {
+    "method": "ascending_sort",
+    "raw_crossing_count": 3,
+    "raw_crossing_percent": 0.1056
+  },
+  "overall_metrics": [
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 2840,
+      "mae_kg": 580.5263,
+      "rmse_kg": 893.6088,
+      "wape_percent": 14.407,
+      "smape_percent": 13.6941,
+      "interval_coverage_percent": 51.5141,
+      "mean_interval_width_kg": 1112.339,
+      "raw_crossing_percent": 0.1056
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "last_observed",
+      "sample_count": 2840,
+      "mae_kg": 586.4996,
+      "rmse_kg": 884.173,
+      "wape_percent": 14.5552,
+      "smape_percent": 13.7147,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null,
+      "raw_crossing_percent": null
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "seasonal_52w",
+      "sample_count": 2840,
+      "mae_kg": 559.8018,
+      "rmse_kg": 861.6533,
+      "wape_percent": 13.8927,
+      "smape_percent": 13.3903,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null,
+      "raw_crossing_percent": null
+    }
+  ],
+  "grade_metrics": [
+    {
+      "grade": "BOP",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 568,
+      "mae_kg": 444.5163,
+      "rmse_kg": 549.3226,
+      "wape_percent": 10.7194,
+      "smape_percent": 10.7125,
+      "interval_coverage_percent": 56.338,
+      "mean_interval_width_kg": 907.7707,
+      "raw_crossing_percent": 0.0
+    },
+    {
+      "grade": "BOPF",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 568,
+      "mae_kg": 598.7874,
+      "rmse_kg": 768.0706,
+      "wape_percent": 12.1619,
+      "smape_percent": 12.1692,
+      "interval_coverage_percent": 60.2113,
+      "mean_interval_width_kg": 1256.4668,
+      "raw_crossing_percent": 0.0
+    },
+    {
+      "grade": "Dust",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 568,
+      "mae_kg": 1333.7331,
+      "rmse_kg": 1692.0598,
+      "wape_percent": 19.5279,
+      "smape_percent": 19.9496,
+      "interval_coverage_percent": 39.9648,
+      "mean_interval_width_kg": 2541.3875,
+      "raw_crossing_percent": 0.5282
+    },
+    {
+      "grade": "OP",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 568,
+      "mae_kg": 278.8614,
+      "rmse_kg": 363.4863,
+      "wape_percent": 11.0175,
+      "smape_percent": 11.1135,
+      "interval_coverage_percent": 58.2746,
+      "mean_interval_width_kg": 505.1956,
+      "raw_crossing_percent": 0.0
+    },
+    {
+      "grade": "Pekoe",
+      "horizon": "ALL",
+      "model": "nine_input_tft",
+      "sample_count": 568,
+      "mae_kg": 246.7334,
+      "rmse_kg": 325.2799,
+      "wape_percent": 14.3776,
+      "smape_percent": 14.5257,
+      "interval_coverage_percent": 42.7817,
+      "mean_interval_width_kg": 350.8743,
+      "raw_crossing_percent": 0.0
+    }
+  ],
+  "notes": [
+    "The trained checkpoint was not modified.",
+    "Original quantile crossings are recorded.",
+    "Metrics use rearranged quantiles for the TFT.",
+    "The held-out test partition was not used for checkpoint selection.",
+    "Overlapping forecast windows are not independent observations.",
+    "Baselines use historical encoder demand.",
+    "Factory deployment requires separate integration."
+  ]
+}

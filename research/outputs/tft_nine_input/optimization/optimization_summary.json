@@ -1,0 +1,74 @@
+{
+  "model_family": "nine_input_tft",
+  "created_at_utc": "2026-10-19T06:21:04.919591+00:00",
+  "encoder_weeks": 52,
+  "forecast_weeks": 4,
+  "historical_features": [
+    "demand_kg",
+    "production_kg",
+    "inventory_kg",
+    "usd_lkr_monday_rate",
+    "usd_lkr_sunday_rate",
+    "festival_flag",
+    "auction_price_high_lkr",
+    "auction_price_medium_lkr",
+    "auction_price_low_lkr"
+  ],
+  "selection_metric": "validation_mae_kg",
+  "selected_candidate": {
+    "name": "candidate_b",
+    "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\optimization\\candidate_b\\checkpoints\\best-13-251.4402.ckpt",
+    "hidden_size": 32,
+    "hidden_continuous_size": 16,
+    "attention_head_size": 4,
+    "dropout": 0.2,
+    "validation_quantile_loss": 251.440185546875,
+    "validation_forecast_count": 980,
+    "validation_mae_kg": 384.77,
+    "validation_rmse_kg": 554.0724,
+    "validation_wape_percent": 10.401,
+    "validation_interval_coverage_percent": 73.9796,
+    "validation_raw_crossing_percent": 0.0
+  },
+  "all_candidates": [
+    {
+      "name": "candidate_a",
+      "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\optimization\\candidate_a\\checkpoints\\best-06-266.7152.ckpt",
+      "hidden_size": 24,
+      "hidden_continuous_size": 12,
+      "attention_head_size": 4,
+      "dropout": 0.15,
+      "validation_quantile_loss": 266.7152099609375,
+      "validation_forecast_count": 980,
+      "validation_mae_kg": 423.8745,
+      "validation_rmse_kg": 622.5092,
+      "validation_wape_percent": 11.458,
+      "validation_interval_coverage_percent": 73.9796,
+      "validation_raw_crossing_percent": 0.0
+    },
+    {
+      "name": "candidate_b",
+      "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_nine_input\\optimization\\candidate_b\\checkpoints\\best-13-251.4402.ckpt",
+      "hidden_size": 32,
+      "hidden_continuous_size": 16,
+      "attention_head_size": 4,
+      "dropout": 0.2,
+      "validation_quantile_loss": 251.440185546875,
+      "validation_forecast_count": 980,
+      "validation_mae_kg": 384.77,
+      "validation_rmse_kg": 554.0724,
+      "validation_wape_percent": 10.401,
+      "validation_interval_coverage_percent": 73.9796,
+      "validation_raw_crossing_percent": 0.0
+    }
+  ],
+  "held_out_test_evaluated": false,
+  "factory_model_replaced": false,
+  "notes": [
+    "Candidate selection uses validation data only.",
+    "All nine historical features are retained.",
+    "Raw quantile crossings are reported.",
+    "The previous trained checkpoint is unchanged.",
+    "Test performance is not assumed from validation results."
+  ]
+}

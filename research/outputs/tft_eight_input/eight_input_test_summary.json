@@ -1,0 +1,62 @@
+{
+  "model": "eight_input_tft",
+  "evaluation": "held_out_test",
+  "evaluated_at_utc": "2026-10-17T05:16:23.275872+00:00",
+  "checkpoint": "C:\\Users\\nuwan\\Tea Demand Forecasting Research New\\tea-demand-forecasting-backend\\research\\outputs\\tft_eight_input\\checkpoints\\eight-input-epoch11-val276.7706.ckpt",
+  "test_windows": 710,
+  "prediction_rows": 2840,
+  "test_start": "2024-01-01",
+  "overall_metrics": [
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "eight_input_tft",
+      "sample_count": 2840,
+      "mae_kg": 705.4104,
+      "rmse_kg": 999.7743,
+      "smape_percent": 18.5116,
+      "interval_coverage_percent": 67.4648,
+      "mean_interval_width_kg": 1542.0075
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "last_observed",
+      "sample_count": 2840,
+      "mae_kg": 586.4996,
+      "rmse_kg": 884.173,
+      "smape_percent": 13.7147,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    },
+    {
+      "grade": "ALL",
+      "horizon": "ALL",
+      "model": "seasonal_52w",
+      "sample_count": 2840,
+      "mae_kg": 559.8018,
+      "rmse_kg": 861.6533,
+      "smape_percent": 13.3903,
+      "interval_coverage_percent": null,
+      "mean_interval_width_kg": null
+    }
+  ],
+  "auction_source_audit_status": {
+    "AVAILABLE_SOURCE": 1440,
+    "REVIEW_FLAGGED_SOURCE": 60
+  },
+  "auction_publication_timestamp_verified": false,
+  "dataset_approval_status": "provisional",
+  "notes": [
+    "No retraining was performed.",
+    "The checkpoint was selected by validation loss.",
+    "The held-out test partition was not used for checkpoint selection.",
+    "Baselines use only encoder observations.",
+    "Overlapping forecast windows are scored separately.",
+    "Overlapping predictions are not independent samples.",
+    "The auction-price dataset contains flagged source records.",
+    "Historical auction publication timestamps are not verified.",
+    "Compare versions only by matched grade, target date and horizon.",
+    "Test metrics do not establish the causal effect of auction prices."
+  ]
+}
